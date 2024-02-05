@@ -13,6 +13,6 @@ result_divide = div(a, b)
 
 # Print the results
 print("{} + {} = {}".format(a, b, result_add))
-print("{} - {} = {}".format(b, a, result_subtract))
+print("{} - {} = {}".format(a, b, result_subtract))
 print("{} * {} = {}".format(a, b, result_multiply))
 print("{} / {} = {}".format(a, b, result_divide))
