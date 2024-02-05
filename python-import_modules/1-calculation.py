@@ -12,7 +12,7 @@ result_multiply = mul(a, b)
 result_divide = div(a, b)
 
 # Print the results
-print("Result of adding {} and {} is: {}".format(a, b, result_add))
-print("Result of subtracting {} from {} is: {}".format(b, a, result_subtract))
-print("Result of multiplying {} and {} is: {}".format(a, b, result_multiply))
-print("Result of dividing {} by {} is: {}".format(a, b, result_divide))
+print("{} + {} = {}".format(a, b, result_add))
+print("{} - {} = {}".format(b, a, result_subtract))
+print("{} * {} = {}".format(a, b, result_multiply))
+print("{} / {} = {}".format(a, b, result_divide))
