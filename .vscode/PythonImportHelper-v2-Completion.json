@@ -547,7 +547,7 @@
         "kind": 6,
         "importPath": "python-more_classes.0-rectangle",
         "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "class Rectangle:\n    def area(self):\n        return self.length * self.width\n    def perimeter(self):\n        return 2 * (self.length + self.width)\n    def is_square(self):\n        return self.length == self.width",
+        "peekOfCode": "class Rectangle:\n\tpass",
         "detail": "python-more_classes.0-rectangle",
         "documentation": {}
     },
