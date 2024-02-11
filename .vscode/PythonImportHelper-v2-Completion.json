@@ -526,29 +526,65 @@
     },
     {
         "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.0-main",
+        "description": "python-more_classes.0-main",
+        "peekOfCode": "Rectangle = __import__('0-rectangle').Rectangle\nmy_rectangle = Rectangle()\nprint(type(my_rectangle))\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.0-main",
+        "description": "python-more_classes.0-main",
+        "peekOfCode": "my_rectangle = Rectangle()\nprint(type(my_rectangle))\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
         "kind": 6,
         "importPath": "python-more_classes.0-rectangle",
         "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "class Rectangle:\n\tdef __init__(self, length, width):\n\t\tself.length = length\n\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):\n        return self.length * self.width\n    def perimeter(self):\n        return 2 * (self.length + self.width)\n    def is_square(self):\n        return self.length == self.width",
         "detail": "python-more_classes.0-rectangle",
         "documentation": {}
     },
     {
-        "label": "\t\tself.length",
+        "label": "Rectangle",
         "kind": 5,
-        "importPath": "python-more_classes.0-rectangle",
-        "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "\t\tself.length = length\n\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
-        "detail": "python-more_classes.0-rectangle",
+        "importPath": "python-more_classes.1-main",
+        "description": "python-more_classes.1-main",
+        "peekOfCode": "Rectangle = __import__('1-rectangle').Rectangle\nmy_rectangle = Rectangle(2, 4)\nprint(my_rectangle.__dict__)\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.1-main",
         "documentation": {}
     },
     {
-        "label": "\t\tself.width",
+        "label": "my_rectangle",
         "kind": 5,
-        "importPath": "python-more_classes.0-rectangle",
-        "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
-        "detail": "python-more_classes.0-rectangle",
+        "importPath": "python-more_classes.1-main",
+        "description": "python-more_classes.1-main",
+        "peekOfCode": "my_rectangle = Rectangle(2, 4)\nprint(my_rectangle.__dict__)\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.width",
+        "kind": 5,
+        "importPath": "python-more_classes.1-main",
+        "description": "python-more_classes.1-main",
+        "peekOfCode": "my_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.height",
+        "kind": 5,
+        "importPath": "python-more_classes.1-main",
+        "description": "python-more_classes.1-main",
+        "peekOfCode": "my_rectangle.height = 3\nprint(my_rectangle.__dict__)",
+        "detail": "python-more_classes.1-main",
         "documentation": {}
     },
     {
@@ -558,6 +594,348 @@
         "description": "python-more_classes.1-rectangle",
         "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
         "detail": "python-more_classes.1-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.2-main",
+        "description": "python-more_classes.2-main",
+        "peekOfCode": "Rectangle = __import__('2-rectangle').Rectangle\nmy_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\nprint(\"--\")\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))",
+        "detail": "python-more_classes.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.2-main",
+        "description": "python-more_classes.2-main",
+        "peekOfCode": "my_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\nprint(\"--\")\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))",
+        "detail": "python-more_classes.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.width",
+        "kind": 5,
+        "importPath": "python-more_classes.2-main",
+        "description": "python-more_classes.2-main",
+        "peekOfCode": "my_rectangle.width = 10\nmy_rectangle.height = 3\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))",
+        "detail": "python-more_classes.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.height",
+        "kind": 5,
+        "importPath": "python-more_classes.2-main",
+        "description": "python-more_classes.2-main",
+        "peekOfCode": "my_rectangle.height = 3\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))",
+        "detail": "python-more_classes.2-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.2-rectangle",
+        "description": "python-more_classes.2-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.2-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.3-main",
+        "description": "python-more_classes.3-main",
+        "peekOfCode": "Rectangle = __import__('3-rectangle').Rectangle\nmy_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\nprint(str(my_rectangle))\nprint(repr(my_rectangle))\nprint(\"--\")\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle)\nprint(repr(my_rectangle))",
+        "detail": "python-more_classes.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.3-main",
+        "description": "python-more_classes.3-main",
+        "peekOfCode": "my_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\nprint(str(my_rectangle))\nprint(repr(my_rectangle))\nprint(\"--\")\nmy_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle)\nprint(repr(my_rectangle))",
+        "detail": "python-more_classes.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.width",
+        "kind": 5,
+        "importPath": "python-more_classes.3-main",
+        "description": "python-more_classes.3-main",
+        "peekOfCode": "my_rectangle.width = 10\nmy_rectangle.height = 3\nprint(my_rectangle)\nprint(repr(my_rectangle))",
+        "detail": "python-more_classes.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle.height",
+        "kind": 5,
+        "importPath": "python-more_classes.3-main",
+        "description": "python-more_classes.3-main",
+        "peekOfCode": "my_rectangle.height = 3\nprint(my_rectangle)\nprint(repr(my_rectangle))",
+        "detail": "python-more_classes.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.3-rectangle",
+        "description": "python-more_classes.3-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.3-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.4-main",
+        "description": "python-more_classes.4-main",
+        "peekOfCode": "Rectangle = __import__('4-rectangle').Rectangle\nmy_rectangle = Rectangle(2, 4)\nprint(str(my_rectangle))\nprint(\"--\")\nprint(my_rectangle)\nprint(\"--\")\nprint(repr(my_rectangle))\nprint(\"--\")\nprint(hex(id(my_rectangle)))\nprint(\"--\")",
+        "detail": "python-more_classes.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.4-main",
+        "description": "python-more_classes.4-main",
+        "peekOfCode": "my_rectangle = Rectangle(2, 4)\nprint(str(my_rectangle))\nprint(\"--\")\nprint(my_rectangle)\nprint(\"--\")\nprint(repr(my_rectangle))\nprint(\"--\")\nprint(hex(id(my_rectangle)))\nprint(\"--\")\n# create new instance based on representation",
+        "detail": "python-more_classes.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "new_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.4-main",
+        "description": "python-more_classes.4-main",
+        "peekOfCode": "new_rectangle = eval(repr(my_rectangle))\nprint(str(new_rectangle))\nprint(\"--\")\nprint(new_rectangle)\nprint(\"--\")\nprint(repr(new_rectangle))\nprint(\"--\")\nprint(hex(id(new_rectangle)))\nprint(\"--\")\nprint(new_rectangle is my_rectangle)",
+        "detail": "python-more_classes.4-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.4-rectangle",
+        "description": "python-more_classes.4-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.4-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.5-main",
+        "description": "python-more_classes.5-main",
+        "peekOfCode": "Rectangle = __import__('5-rectangle').Rectangle\nmy_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\ndel my_rectangle\ntry:\n    print(my_rectangle)\nexcept Exception as e:\n    print(\"[{}] {}\".format(e.__class__.__name__, e))",
+        "detail": "python-more_classes.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.5-main",
+        "description": "python-more_classes.5-main",
+        "peekOfCode": "my_rectangle = Rectangle(2, 4)\nprint(\"Area: {} - Perimeter: {}\".format(my_rectangle.area(), my_rectangle.perimeter()))\ndel my_rectangle\ntry:\n    print(my_rectangle)\nexcept Exception as e:\n    print(\"[{}] {}\".format(e.__class__.__name__, e))",
+        "detail": "python-more_classes.5-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.5-rectangle",
+        "description": "python-more_classes.5-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.5-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.6-main",
+        "description": "python-more_classes.6-main",
+        "peekOfCode": "Rectangle = __import__('6-rectangle').Rectangle\nmy_rectangle_1 = Rectangle(2, 4)\nmy_rectangle_2 = Rectangle(2, 4)\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_1\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_2\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))",
+        "detail": "python-more_classes.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_1",
+        "kind": 5,
+        "importPath": "python-more_classes.6-main",
+        "description": "python-more_classes.6-main",
+        "peekOfCode": "my_rectangle_1 = Rectangle(2, 4)\nmy_rectangle_2 = Rectangle(2, 4)\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_1\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_2\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))",
+        "detail": "python-more_classes.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_2",
+        "kind": 5,
+        "importPath": "python-more_classes.6-main",
+        "description": "python-more_classes.6-main",
+        "peekOfCode": "my_rectangle_2 = Rectangle(2, 4)\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_1\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))\ndel my_rectangle_2\nprint(\"{:d} instances of Rectangle\".format(Rectangle.number_of_instances))",
+        "detail": "python-more_classes.6-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.6-rectangle",
+        "description": "python-more_classes.6-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.6-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "Rectangle = __import__('7-rectangle').Rectangle\nmy_rectangle_1 = Rectangle(8, 4)\nprint(my_rectangle_1)\nprint(\"--\")\nmy_rectangle_1.print_symbol = \"&\"\nprint(my_rectangle_1)\nprint(\"--\")\nmy_rectangle_2 = Rectangle(2, 1)\nprint(my_rectangle_2)\nprint(\"--\")",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_1",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "my_rectangle_1 = Rectangle(8, 4)\nprint(my_rectangle_1)\nprint(\"--\")\nmy_rectangle_1.print_symbol = \"&\"\nprint(my_rectangle_1)\nprint(\"--\")\nmy_rectangle_2 = Rectangle(2, 1)\nprint(my_rectangle_2)\nprint(\"--\")\nRectangle.print_symbol = \"C\"",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_1.print_symbol",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "my_rectangle_1.print_symbol = \"&\"\nprint(my_rectangle_1)\nprint(\"--\")\nmy_rectangle_2 = Rectangle(2, 1)\nprint(my_rectangle_2)\nprint(\"--\")\nRectangle.print_symbol = \"C\"\nprint(my_rectangle_2)\nprint(\"--\")\nmy_rectangle_3 = Rectangle(7, 3)",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_2",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "my_rectangle_2 = Rectangle(2, 1)\nprint(my_rectangle_2)\nprint(\"--\")\nRectangle.print_symbol = \"C\"\nprint(my_rectangle_2)\nprint(\"--\")\nmy_rectangle_3 = Rectangle(7, 3)\nprint(my_rectangle_3)\nprint(\"--\")\nmy_rectangle_3.print_symbol = [\"C\", \"is\", \"fun!\"]",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle.print_symbol",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "Rectangle.print_symbol = \"C\"\nprint(my_rectangle_2)\nprint(\"--\")\nmy_rectangle_3 = Rectangle(7, 3)\nprint(my_rectangle_3)\nprint(\"--\")\nmy_rectangle_3.print_symbol = [\"C\", \"is\", \"fun!\"]\nprint(my_rectangle_3)\nprint(\"--\")",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_3",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "my_rectangle_3 = Rectangle(7, 3)\nprint(my_rectangle_3)\nprint(\"--\")\nmy_rectangle_3.print_symbol = [\"C\", \"is\", \"fun!\"]\nprint(my_rectangle_3)\nprint(\"--\")",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_3.print_symbol",
+        "kind": 5,
+        "importPath": "python-more_classes.7-main",
+        "description": "python-more_classes.7-main",
+        "peekOfCode": "my_rectangle_3.print_symbol = [\"C\", \"is\", \"fun!\"]\nprint(my_rectangle_3)\nprint(\"--\")",
+        "detail": "python-more_classes.7-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.7-rectangle",
+        "description": "python-more_classes.7-rectangle",
+        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "detail": "python-more_classes.7-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.8-main",
+        "description": "python-more_classes.8-main",
+        "peekOfCode": "Rectangle = __import__('8-rectangle').Rectangle\nmy_rectangle_1 = Rectangle(8, 4)\nmy_rectangle_2 = Rectangle(2, 3)\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:\n    print(\"my_rectangle_2 is bigger than my_rectangle_1\")\nmy_rectangle_2.width = 10\nmy_rectangle_2.height = 5\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):",
+        "detail": "python-more_classes.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_1",
+        "kind": 5,
+        "importPath": "python-more_classes.8-main",
+        "description": "python-more_classes.8-main",
+        "peekOfCode": "my_rectangle_1 = Rectangle(8, 4)\nmy_rectangle_2 = Rectangle(2, 3)\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:\n    print(\"my_rectangle_2 is bigger than my_rectangle_1\")\nmy_rectangle_2.width = 10\nmy_rectangle_2.height = 5\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")",
+        "detail": "python-more_classes.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_2",
+        "kind": 5,
+        "importPath": "python-more_classes.8-main",
+        "description": "python-more_classes.8-main",
+        "peekOfCode": "my_rectangle_2 = Rectangle(2, 3)\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:\n    print(\"my_rectangle_2 is bigger than my_rectangle_1\")\nmy_rectangle_2.width = 10\nmy_rectangle_2.height = 5\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:",
+        "detail": "python-more_classes.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_2.width",
+        "kind": 5,
+        "importPath": "python-more_classes.8-main",
+        "description": "python-more_classes.8-main",
+        "peekOfCode": "my_rectangle_2.width = 10\nmy_rectangle_2.height = 5\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:\n    print(\"my_rectangle_2 is bigger than my_rectangle_1\")",
+        "detail": "python-more_classes.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_rectangle_2.height",
+        "kind": 5,
+        "importPath": "python-more_classes.8-main",
+        "description": "python-more_classes.8-main",
+        "peekOfCode": "my_rectangle_2.height = 5\nif my_rectangle_1 is Rectangle.bigger_or_equal(my_rectangle_1, my_rectangle_2):\n    print(\"my_rectangle_1 is bigger or equal to my_rectangle_2\")\nelse:\n    print(\"my_rectangle_2 is bigger than my_rectangle_1\")",
+        "detail": "python-more_classes.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.8-rectangle",
+        "description": "python-more_classes.8-rectangle",
+        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "detail": "python-more_classes.8-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-more_classes.9-main",
+        "description": "python-more_classes.9-main",
+        "peekOfCode": "Rectangle = __import__('9-rectangle').Rectangle\nmy_square = Rectangle.square(5)\nprint(\"Area: {} - Perimeter: {}\".format(my_square.area(), my_square.perimeter()))\nprint(my_square)",
+        "detail": "python-more_classes.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_square",
+        "kind": 5,
+        "importPath": "python-more_classes.9-main",
+        "description": "python-more_classes.9-main",
+        "peekOfCode": "my_square = Rectangle.square(5)\nprint(\"Area: {} - Perimeter: {}\".format(my_square.area(), my_square.perimeter()))\nprint(my_square)",
+        "detail": "python-more_classes.9-main",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.9-rectangle",
+        "description": "python-more_classes.9-rectangle",
+        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "detail": "python-more_classes.9-rectangle",
         "documentation": {}
     },
     {
