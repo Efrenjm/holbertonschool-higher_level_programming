@@ -547,7 +547,7 @@
         "kind": 6,
         "importPath": "python-more_classes.0-rectangle",
         "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, length, width):\n        self.length = length\n        self.width = width\n    def area(self):\n        return self.length * self.width\n    def perimeter(self):\n        return 2 * (self.length + self.width)\n    def is_square(self):\n        return self.length == self.width",
+        "peekOfCode": "class Rectangle:\n    def __init__(self):\n        pass\n    def area(self):\n        return self.length * self.width\n    def perimeter(self):\n        return 2 * (self.length + self.width)\n    def is_square(self):\n        return self.length == self.width",
         "detail": "python-more_classes.0-rectangle",
         "documentation": {}
     },
@@ -781,7 +781,7 @@
         "kind": 6,
         "importPath": "python-more_classes.6-rectangle",
         "description": "python-more_classes.6-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width\n    @width.setter",
         "detail": "python-more_classes.6-rectangle",
         "documentation": {}
     },
