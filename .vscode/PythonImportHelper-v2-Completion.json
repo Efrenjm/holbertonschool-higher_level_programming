@@ -1,0 +1,833 @@
+[
+    {
+        "label": "this",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "this",
+        "description": "this",
+        "detail": "this",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "add_0",
+        "description": "add_0",
+        "isExtraImport": true,
+        "detail": "add_0",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "importPath": "calculator_1",
+        "description": "calculator_1",
+        "isExtraImport": true,
+        "detail": "calculator_1",
+        "documentation": {}
+    },
+    {
+        "label": "sub",
+        "importPath": "calculator_1",
+        "description": "calculator_1",
+        "isExtraImport": true,
+        "detail": "calculator_1",
+        "documentation": {}
+    },
+    {
+        "label": "mul",
+        "importPath": "calculator_1",
+        "description": "calculator_1",
+        "isExtraImport": true,
+        "detail": "calculator_1",
+        "documentation": {}
+    },
+    {
+        "label": "div",
+        "importPath": "calculator_1",
+        "description": "calculator_1",
+        "isExtraImport": true,
+        "detail": "calculator_1",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "hidden_4",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "hidden_4",
+        "description": "hidden_4",
+        "detail": "hidden_4",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "importPath": "variable_load_5",
+        "description": "variable_load_5",
+        "isExtraImport": true,
+        "detail": "variable_load_5",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.0-square",
+        "description": "python-classes.0-square",
+        "peekOfCode": "class Square:\n\t\"\"\"Square class\"\"\"\n\tpass",
+        "detail": "python-classes.0-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.1-square",
+        "description": "python-classes.1-square",
+        "peekOfCode": "class Square:\n    \"\"\"a square class\"\"\"\n    def __init__(self, size):\n        \"\"\"initialize a square\n        Args:\n            size (int): The size of the new square\n        \"\"\"\n        self.__size = size",
+        "detail": "python-classes.1-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.2-square",
+        "description": "python-classes.2-square",
+        "peekOfCode": "class Square:\n    \"\"\"represents a square\"\"\"\n    def __init__(self, size=0):\n        \"\"\"Initializes a new Square.\n        Args:\n            size (int): The size of the new square\n        \"\"\"\n        if type(size) is not int:\n            raise TypeError('size must be an integer')\n        if size < 0:",
+        "detail": "python-classes.2-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.3-square",
+        "description": "python-classes.3-square",
+        "peekOfCode": "class Square:\n    \"\"\"represents a Square\"\"\"\n    def __init__(self, size=0):\n        \"\"\"Initializes a new Square\n        Args:\n            size (int): The size of the new square.\n        \"\"\"\n        if type(size) is not int:\n            raise TypeError('size must be an integer')\n        if size < 0:",
+        "detail": "python-classes.3-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.4-square",
+        "description": "python-classes.4-square",
+        "peekOfCode": "class Square:\n    \"\"\"represents a Square\"\"\"\n    def __init__(self, size=0):\n        \"\"\"Initializes a new Square\n        Args:\n            size (int): The size of the new square.\n        Raises:\n            TypeError: If `size` type is not `int`.\n            ValueError: If `size` is less than `0`.\n        \"\"\"",
+        "detail": "python-classes.4-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.5-square",
+        "description": "python-classes.5-square",
+        "peekOfCode": "class Square:\n    \"\"\"represents a Square\"\"\"\n    def __init__(self, size=0):\n        \"\"\"Initializes a new Square\n        Args:\n            size (int): The size of the new square.\n        Raises:\n            TypeError: If `size` type is not `int`.\n            ValueError: If `size` is less than `0`.\n        \"\"\"",
+        "detail": "python-classes.5-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-classes.6-square",
+        "description": "python-classes.6-square",
+        "peekOfCode": "class Square:\n    \"\"\"represents a Square\"\"\"\n    def __init__(self, size=0, position=(0, 0)):\n        \"\"\"Initializes a new Square\n        Args:\n            size (int): The size of the new square.\n        Raises:\n            TypeError: If `size` type is not `int`.\n            ValueError: If `size` is less than `0`.\n        \"\"\"",
+        "detail": "python-classes.6-square",
+        "documentation": {}
+    },
+    {
+        "label": "print_list_integer",
+        "kind": 2,
+        "importPath": "python-data_structures.0-print_list_integer",
+        "description": "python-data_structures.0-print_list_integer",
+        "peekOfCode": "def print_list_integer(my_list=[]):\n    for i in my_list:\n        print('{:d}'.format(i))",
+        "detail": "python-data_structures.0-print_list_integer",
+        "documentation": {}
+    },
+    {
+        "label": "element_at",
+        "kind": 2,
+        "importPath": "python-data_structures.1-element_at",
+        "description": "python-data_structures.1-element_at",
+        "peekOfCode": "def element_at(my_list, idx):\n    if idx < 0 or idx >= len(my_list):\n        return None\n    return my_list[idx]",
+        "detail": "python-data_structures.1-element_at",
+        "documentation": {}
+    },
+    {
+        "label": "divisible_by_2",
+        "kind": 2,
+        "importPath": "python-data_structures.10-divisible_by_2",
+        "description": "python-data_structures.10-divisible_by_2",
+        "peekOfCode": "def divisible_by_2(my_list=[]):\n    tempList = []\n    for i in my_list:\n        if i % 2 == 0:\n            tempList.append(True)\n        else:\n            tempList.append(False)\n    return tempList",
+        "detail": "python-data_structures.10-divisible_by_2",
+        "documentation": {}
+    },
+    {
+        "label": "delete_at",
+        "kind": 2,
+        "importPath": "python-data_structures.11-delete_at",
+        "description": "python-data_structures.11-delete_at",
+        "peekOfCode": "def delete_at(my_list=[], idx=0):\n    length = len(my_list)\n    if idx < 0 or idx >= length:\n        return my_list\n    del my_list[idx]\n    return my_list",
+        "detail": "python-data_structures.11-delete_at",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "python-data_structures.12-switch",
+        "description": "python-data_structures.12-switch",
+        "peekOfCode": "a = 89\nb = 10\na, b = b, a\nprint(\"a={:d} - b={:d}\".format(a, b))",
+        "detail": "python-data_structures.12-switch",
+        "documentation": {}
+    },
+    {
+        "label": "b",
+        "kind": 5,
+        "importPath": "python-data_structures.12-switch",
+        "description": "python-data_structures.12-switch",
+        "peekOfCode": "b = 10\na, b = b, a\nprint(\"a={:d} - b={:d}\".format(a, b))",
+        "detail": "python-data_structures.12-switch",
+        "documentation": {}
+    },
+    {
+        "label": "replace_in_list",
+        "kind": 2,
+        "importPath": "python-data_structures.2-replace_in_list",
+        "description": "python-data_structures.2-replace_in_list",
+        "peekOfCode": "def replace_in_list(my_list, idx, element):\n    if idx < 0 or idx >= len(my_list):\n        return my_list\n    my_list[idx] = element\n    return my_list",
+        "detail": "python-data_structures.2-replace_in_list",
+        "documentation": {}
+    },
+    {
+        "label": "print_reversed_list_integer",
+        "kind": 2,
+        "importPath": "python-data_structures.3-print_reversed_list_integer",
+        "description": "python-data_structures.3-print_reversed_list_integer",
+        "peekOfCode": "def print_reversed_list_integer(my_list=[]):\n    if my_list:\n        for i in reversed(my_list):\n            print('{:d}'.format(i))",
+        "detail": "python-data_structures.3-print_reversed_list_integer",
+        "documentation": {}
+    },
+    {
+        "label": "new_in_list",
+        "kind": 2,
+        "importPath": "python-data_structures.4-new_in_list",
+        "description": "python-data_structures.4-new_in_list",
+        "peekOfCode": "def new_in_list(my_list, idx, element):\n    temp = my_list.copy()\n    if idx < 0 or idx >= len(my_list):\n        return temp\n    temp[idx] = element\n    return temp",
+        "detail": "python-data_structures.4-new_in_list",
+        "documentation": {}
+    },
+    {
+        "label": "no_c",
+        "kind": 2,
+        "importPath": "python-data_structures.5-no_c",
+        "description": "python-data_structures.5-no_c",
+        "peekOfCode": "def no_c(my_string):\n    strT = ''\n    for i in my_string:\n        if i != 'C' and i != 'c':\n            strT += i\n    return strT",
+        "detail": "python-data_structures.5-no_c",
+        "documentation": {}
+    },
+    {
+        "label": "print_matrix_integer",
+        "kind": 2,
+        "importPath": "python-data_structures.6-print_matrix_integer",
+        "description": "python-data_structures.6-print_matrix_integer",
+        "peekOfCode": "def print_matrix_integer(matrix=[[]]):\n    if matrix:\n        for i in matrix:\n            j = 1\n            leng = len(i)\n            for m in i:\n                if j == leng:\n                    print('{:d}'.format(m), end='')\n                else:\n                    print('{:d}'.format(m), end=' ')",
+        "detail": "python-data_structures.6-print_matrix_integer",
+        "documentation": {}
+    },
+    {
+        "label": "add_tuple",
+        "kind": 2,
+        "importPath": "python-data_structures.7-add_tuple",
+        "description": "python-data_structures.7-add_tuple",
+        "peekOfCode": "def add_tuple(tuple_a=(), tuple_b=()):\n    tuple_a = validTuple(tuple_a)\n    tuple_b = validTuple(tuple_b)\n    return ((tuple_a[0] + tuple_b[0]), (tuple_a[1] + tuple_b[1]))\ndef validTuple(_tuple=()):\n    if len(_tuple) < 2:\n        if len(_tuple) == 1:\n            _tuple = (_tuple[0], 0)\n        elif len(_tuple) == 0:\n            _tuple = (0, 0)",
+        "detail": "python-data_structures.7-add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "validTuple",
+        "kind": 2,
+        "importPath": "python-data_structures.7-add_tuple",
+        "description": "python-data_structures.7-add_tuple",
+        "peekOfCode": "def validTuple(_tuple=()):\n    if len(_tuple) < 2:\n        if len(_tuple) == 1:\n            _tuple = (_tuple[0], 0)\n        elif len(_tuple) == 0:\n            _tuple = (0, 0)\n    elif len(_tuple) > 2:\n        _tuple = (_tuple[0], _tuple[1])\n    return _tuple",
+        "detail": "python-data_structures.7-add_tuple",
+        "documentation": {}
+    },
+    {
+        "label": "multiple_returns",
+        "kind": 2,
+        "importPath": "python-data_structures.8-multiple_returns",
+        "description": "python-data_structures.8-multiple_returns",
+        "peekOfCode": "def multiple_returns(sentence):\n    if not sentence:\n        return (0, None)\n    return (len(sentence), sentence[0])",
+        "detail": "python-data_structures.8-multiple_returns",
+        "documentation": {}
+    },
+    {
+        "label": "max_integer",
+        "kind": 2,
+        "importPath": "python-data_structures.9-max_integer",
+        "description": "python-data_structures.9-max_integer",
+        "peekOfCode": "def max_integer(my_list=[]):\n    if not my_list:\n        return None\n    numMax = min(my_list)\n    for i in my_list:\n        if i > numMax:\n            numMax = i\n    return numMax",
+        "detail": "python-data_structures.9-max_integer",
+        "documentation": {}
+    },
+    {
+        "label": "safe_print_list",
+        "kind": 2,
+        "importPath": "python-exceptions.0-safe_print_list",
+        "description": "python-exceptions.0-safe_print_list",
+        "peekOfCode": "def safe_print_list(my_list=[], x=0):\n    i = 0\n    while i < x:\n        try:\n            print(\"{:d}\".format(my_list[i]), end=\"\")\n            i += 1\n        except IndexError:\n            break\n    print(\"\")\n    return i",
+        "detail": "python-exceptions.0-safe_print_list",
+        "documentation": {}
+    },
+    {
+        "label": "safe_print_integer",
+        "kind": 2,
+        "importPath": "python-exceptions.1-safe_print_integer",
+        "description": "python-exceptions.1-safe_print_integer",
+        "peekOfCode": "def safe_print_integer(value):\n    try:\n        print('{:d}'.format(value))\n        return True\n    except (TypeError, ValueError):\n        return False",
+        "detail": "python-exceptions.1-safe_print_integer",
+        "documentation": {}
+    },
+    {
+        "label": "safe_print_list_integers",
+        "kind": 2,
+        "importPath": "python-exceptions.2-safe_print_list_integers",
+        "description": "python-exceptions.2-safe_print_list_integers",
+        "peekOfCode": "def safe_print_list_integers(my_list=[], x=0):\n    valPrint = 0\n    for i in range(x):\n        try:\n            if type(my_list[i]) is int and valPrint != x:\n                print('{:d}'.format(my_list[i]), end='')\n                valPrint += 1\n        except TypeError:\n            continue\n    print()",
+        "detail": "python-exceptions.2-safe_print_list_integers",
+        "documentation": {}
+    },
+    {
+        "label": "safe_print_division",
+        "kind": 2,
+        "importPath": "python-exceptions.3-safe_print_division",
+        "description": "python-exceptions.3-safe_print_division",
+        "peekOfCode": "def safe_print_division(a, b):\n    result = 0\n    try:\n        result = a / b\n    except ZeroDivisionError:\n        result = None\n    finally:\n        print('Inside result: {}'.format(result))\n        return result",
+        "detail": "python-exceptions.3-safe_print_division",
+        "documentation": {}
+    },
+    {
+        "label": "list_division",
+        "kind": 2,
+        "importPath": "python-exceptions.4-list_division",
+        "description": "python-exceptions.4-list_division",
+        "peekOfCode": "def list_division(my_list_1, my_list_2, list_length):\n    tempList = []\n    for i in range(list_length):\n        try:\n            tempList.append(my_list_1[i] / my_list_2[i])\n        except ZeroDivisionError:\n            tempList.append(0)\n            print('division by 0')\n            continue\n        except IndexError:",
+        "detail": "python-exceptions.4-list_division",
+        "documentation": {}
+    },
+    {
+        "label": "raise_exception",
+        "kind": 2,
+        "importPath": "python-exceptions.5-raise_exception",
+        "description": "python-exceptions.5-raise_exception",
+        "peekOfCode": "def raise_exception():\n    raise TypeError",
+        "detail": "python-exceptions.5-raise_exception",
+        "documentation": {}
+    },
+    {
+        "label": "raise_exception_msg",
+        "kind": 2,
+        "importPath": "python-exceptions.6-raise_exception_msg",
+        "description": "python-exceptions.6-raise_exception_msg",
+        "peekOfCode": "def raise_exception_msg(msg):\n    raise NameError(msg)",
+        "detail": "python-exceptions.6-raise_exception_msg",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "python-hello_world.3-print_number",
+        "description": "python-hello_world.3-print_number",
+        "peekOfCode": "number = 98\nprint(f\"{number} Battery street\")",
+        "detail": "python-hello_world.3-print_number",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "python-hello_world.4-print_float",
+        "description": "python-hello_world.4-print_float",
+        "peekOfCode": "number = 3.14159\nprint(f\"Float: {number:.2f}\")",
+        "detail": "python-hello_world.4-print_float",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "python-hello_world.5-print_string",
+        "description": "python-hello_world.5-print_string",
+        "peekOfCode": "str = \"Holberton School\"\nprint(f\"{str*3}\\n{str[:9]}\")",
+        "detail": "python-hello_world.5-print_string",
+        "documentation": {}
+    },
+    {
+        "label": "str1",
+        "kind": 5,
+        "importPath": "python-hello_world.6-concat",
+        "description": "python-hello_world.6-concat",
+        "peekOfCode": "str1 = \"Holberton\"\nstr2 = \"School\"\nstr1 += \" \" + str2\nprint(f\"Welcome to {str1}!\")",
+        "detail": "python-hello_world.6-concat",
+        "documentation": {}
+    },
+    {
+        "label": "str2",
+        "kind": 5,
+        "importPath": "python-hello_world.6-concat",
+        "description": "python-hello_world.6-concat",
+        "peekOfCode": "str2 = \"School\"\nstr1 += \" \" + str2\nprint(f\"Welcome to {str1}!\")",
+        "detail": "python-hello_world.6-concat",
+        "documentation": {}
+    },
+    {
+        "label": "word",
+        "kind": 5,
+        "importPath": "python-hello_world.7-edges",
+        "description": "python-hello_world.7-edges",
+        "peekOfCode": "word = \"Holberton\"\nword_first_3 = word[:3]\nword_last_2 = word[-2:]\nmiddle_word = word[1:-1]\nprint(f\"First 3 letters: {word_first_3}\")\nprint(f\"Last 2 letters: {word_last_2}\")\nprint(f\"Middle word: {middle_word}\")",
+        "detail": "python-hello_world.7-edges",
+        "documentation": {}
+    },
+    {
+        "label": "word_first_3",
+        "kind": 5,
+        "importPath": "python-hello_world.7-edges",
+        "description": "python-hello_world.7-edges",
+        "peekOfCode": "word_first_3 = word[:3]\nword_last_2 = word[-2:]\nmiddle_word = word[1:-1]\nprint(f\"First 3 letters: {word_first_3}\")\nprint(f\"Last 2 letters: {word_last_2}\")\nprint(f\"Middle word: {middle_word}\")",
+        "detail": "python-hello_world.7-edges",
+        "documentation": {}
+    },
+    {
+        "label": "word_last_2",
+        "kind": 5,
+        "importPath": "python-hello_world.7-edges",
+        "description": "python-hello_world.7-edges",
+        "peekOfCode": "word_last_2 = word[-2:]\nmiddle_word = word[1:-1]\nprint(f\"First 3 letters: {word_first_3}\")\nprint(f\"Last 2 letters: {word_last_2}\")\nprint(f\"Middle word: {middle_word}\")",
+        "detail": "python-hello_world.7-edges",
+        "documentation": {}
+    },
+    {
+        "label": "middle_word",
+        "kind": 5,
+        "importPath": "python-hello_world.7-edges",
+        "description": "python-hello_world.7-edges",
+        "peekOfCode": "middle_word = word[1:-1]\nprint(f\"First 3 letters: {word_first_3}\")\nprint(f\"Last 2 letters: {word_last_2}\")\nprint(f\"Middle word: {middle_word}\")",
+        "detail": "python-hello_world.7-edges",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "python-hello_world.8-concat_edges",
+        "description": "python-hello_world.8-concat_edges",
+        "peekOfCode": "str = \"Python is an interpreted, interactive, object-oriented programming\\\n language that combines remarkable power with very clear syntax\"\nstr = str[39:66] + str[106:112] + str[0:6]\nprint(str)",
+        "detail": "python-hello_world.8-concat_edges",
+        "documentation": {}
+    },
+    {
+        "label": "str",
+        "kind": 5,
+        "importPath": "python-hello_world.8-concat_edges",
+        "description": "python-hello_world.8-concat_edges",
+        "peekOfCode": "str = str[39:66] + str[106:112] + str[0:6]\nprint(str)",
+        "detail": "python-hello_world.8-concat_edges",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "python-if_else_loops_functions.0-positive_or_negative",
+        "description": "python-if_else_loops_functions.0-positive_or_negative",
+        "peekOfCode": "number = random.randint(-10, 10)\nprint(number, end=\" \")\nif number == 0:\n    print(\"is zero\")\nelif number < 0:\n    print(\"is negative\")\nelif number > 0:\n    print(\"is positive\")",
+        "detail": "python-if_else_loops_functions.0-positive_or_negative",
+        "documentation": {}
+    },
+    {
+        "label": "number",
+        "kind": 5,
+        "importPath": "python-if_else_loops_functions.1-last_digit",
+        "description": "python-if_else_loops_functions.1-last_digit",
+        "peekOfCode": "number = random.randint(-10000, 10000)\nif number >= 0:\n    last_digit = number % 10\nelif number < 0:\n    last_digit = ((number * -1) % 10) * -1\nprint(f\"Last digit of {number} is {last_digit} and is \", end=\"\")\nif last_digit > 5:\n    print(\"greater than 5\")\nelif last_digit == 0:\n    print(0)",
+        "detail": "python-if_else_loops_functions.1-last_digit",
+        "documentation": {}
+    },
+    {
+        "label": "add",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.10-add",
+        "description": "python-if_else_loops_functions.10-add",
+        "peekOfCode": "def add(a, b):\n    return a + b",
+        "detail": "python-if_else_loops_functions.10-add",
+        "documentation": {}
+    },
+    {
+        "label": "pow",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.11-pow",
+        "description": "python-if_else_loops_functions.11-pow",
+        "peekOfCode": "def pow(a, b):\n    return a ** b",
+        "detail": "python-if_else_loops_functions.11-pow",
+        "documentation": {}
+    },
+    {
+        "label": "fizzbuzz",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.12-fizzbuzz",
+        "description": "python-if_else_loops_functions.12-fizzbuzz",
+        "peekOfCode": "def fizzbuzz():\n    for i in range(1, 101):\n        if i % 3 == 0 and i % 5 == 0:\n            print('FizzBuzz', end=' ')\n        elif i % 3 == 0:\n            print('Fizz', end=' ')\n        elif i % 5 == 0:\n            print('Buzz', end=' ')\n        else:\n            print(i, end=' ')",
+        "detail": "python-if_else_loops_functions.12-fizzbuzz",
+        "documentation": {}
+    },
+    {
+        "label": "islower",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.7-islower",
+        "description": "python-if_else_loops_functions.7-islower",
+        "peekOfCode": "def islower(c):\n    if ord(c) >= 97 and ord(c) <= 122:\n        return True\n    else:\n        return False",
+        "detail": "python-if_else_loops_functions.7-islower",
+        "documentation": {}
+    },
+    {
+        "label": "uppercase",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.8-uppercase",
+        "description": "python-if_else_loops_functions.8-uppercase",
+        "peekOfCode": "def uppercase(str):\n    temp = \"\"\n    for i in range(len(str)):\n        if (ord(str[i]) >= 97 and ord(str[i]) <= 122):\n            temp += chr(ord(str[i]) - 32)\n            continue\n        temp += str[i]\n    print('{0}'.format(temp))",
+        "detail": "python-if_else_loops_functions.8-uppercase",
+        "documentation": {}
+    },
+    {
+        "label": "print_last_digit",
+        "kind": 2,
+        "importPath": "python-if_else_loops_functions.9-print_last_digit",
+        "description": "python-if_else_loops_functions.9-print_last_digit",
+        "peekOfCode": "def print_last_digit(number):\n    if number >= 0:\n        last_digit = number % 10\n    elif number < 0:\n        last_digit = (number * -1) % 10\n    print(last_digit, end='')\n    return last_digit",
+        "detail": "python-if_else_loops_functions.9-print_last_digit",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.0-rectangle",
+        "description": "python-more_classes.0-rectangle",
+        "peekOfCode": "class Rectangle:\n\tdef __init__(self, length, width):\n\t\tself.length = length\n\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
+        "detail": "python-more_classes.0-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.length",
+        "kind": 5,
+        "importPath": "python-more_classes.0-rectangle",
+        "description": "python-more_classes.0-rectangle",
+        "peekOfCode": "\t\tself.length = length\n\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
+        "detail": "python-more_classes.0-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "\t\tself.width",
+        "kind": 5,
+        "importPath": "python-more_classes.0-rectangle",
+        "description": "python-more_classes.0-rectangle",
+        "peekOfCode": "\t\tself.width = width\n\tdef area(self):\n\t\treturn self.length * self.width\n\tdef perimeter(self):\n\t\treturn 2 * (self.length + self.width)\n\tdef is_square(self):\n\t\treturn self.length == self.width",
+        "detail": "python-more_classes.0-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-more_classes.1-rectangle",
+        "description": "python-more_classes.1-rectangle",
+        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "detail": "python-more_classes.1-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "square_matrix_simple",
+        "kind": 2,
+        "importPath": "python-more_data_structures.0-square_matrix_simple",
+        "description": "python-more_data_structures.0-square_matrix_simple",
+        "peekOfCode": "def square_matrix_simple(matrix=[]):\n    tempMatrix = []\n    if len(matrix) > 0:\n        for nodo in matrix[:]:\n            tempMatrix.append(list(map(lambda x: x ** 2, nodo)))\n    return tempMatrix",
+        "detail": "python-more_data_structures.0-square_matrix_simple",
+        "documentation": {}
+    },
+    {
+        "label": "search_replace",
+        "kind": 2,
+        "importPath": "python-more_data_structures.1-search_replace",
+        "description": "python-more_data_structures.1-search_replace",
+        "peekOfCode": "def search_replace(my_list, search, replace):\n    return [replace if i == search else i for i in my_list]",
+        "detail": "python-more_data_structures.1-search_replace",
+        "documentation": {}
+    },
+    {
+        "label": "best_score",
+        "kind": 2,
+        "importPath": "python-more_data_structures.10-best_score",
+        "description": "python-more_data_structures.10-best_score",
+        "peekOfCode": "def best_score(a_dictionary):\n    if a_dictionary is None:\n        return None\n    bestScore = max(a_dictionary.values(), default=None)\n    for key, value in a_dictionary.items():\n        if value == bestScore:\n            return key",
+        "detail": "python-more_data_structures.10-best_score",
+        "documentation": {}
+    },
+    {
+        "label": "multiply_list_map",
+        "kind": 5,
+        "importPath": "python-more_data_structures.11-main",
+        "description": "python-more_data_structures.11-main",
+        "peekOfCode": "multiply_list_map = __import__('11-multiply_list_map').multiply_list_map\nmy_list = [1, 2, 3, 4, 6]\nnew_list = multiply_list_map(my_list, 4)\nprint(new_list)\nprint(my_list)",
+        "detail": "python-more_data_structures.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "python-more_data_structures.11-main",
+        "description": "python-more_data_structures.11-main",
+        "peekOfCode": "my_list = [1, 2, 3, 4, 6]\nnew_list = multiply_list_map(my_list, 4)\nprint(new_list)\nprint(my_list)",
+        "detail": "python-more_data_structures.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "new_list",
+        "kind": 5,
+        "importPath": "python-more_data_structures.11-main",
+        "description": "python-more_data_structures.11-main",
+        "peekOfCode": "new_list = multiply_list_map(my_list, 4)\nprint(new_list)\nprint(my_list)",
+        "detail": "python-more_data_structures.11-main",
+        "documentation": {}
+    },
+    {
+        "label": "multiply_list_map",
+        "kind": 2,
+        "importPath": "python-more_data_structures.11-multiply_list_map",
+        "description": "python-more_data_structures.11-multiply_list_map",
+        "peekOfCode": "def multiply_list_map(my_list=[], number=0):\n    return list(map(lambda x: x * number, my_list))",
+        "detail": "python-more_data_structures.11-multiply_list_map",
+        "documentation": {}
+    },
+    {
+        "label": "roman_to_int",
+        "kind": 2,
+        "importPath": "python-more_data_structures.12-roman_to_int",
+        "description": "python-more_data_structures.12-roman_to_int",
+        "peekOfCode": "def roman_to_int(roman_string):\n    if type(roman_string) is not str or roman_string is None:\n        return 0\n    roman_vals = [\n        ['M', 1000], ['D', 500], ['C', 100], ['L', 50],\n        ['X', 10], ['V', 5], ['I', 1]\n    ]\n    num = 0\n    last = 0\n    for letter in roman_string:",
+        "detail": "python-more_data_structures.12-roman_to_int",
+        "documentation": {}
+    },
+    {
+        "label": "uniq_add",
+        "kind": 2,
+        "importPath": "python-more_data_structures.2-uniq_add",
+        "description": "python-more_data_structures.2-uniq_add",
+        "peekOfCode": "def uniq_add(my_list=[]):\n    return sum(set(my_list))",
+        "detail": "python-more_data_structures.2-uniq_add",
+        "documentation": {}
+    },
+    {
+        "label": "common_elements",
+        "kind": 2,
+        "importPath": "python-more_data_structures.3-common_elements",
+        "description": "python-more_data_structures.3-common_elements",
+        "peekOfCode": "def common_elements(set_1, set_2):\n    return set_1 & set_2",
+        "detail": "python-more_data_structures.3-common_elements",
+        "documentation": {}
+    },
+    {
+        "label": "only_diff_elements",
+        "kind": 2,
+        "importPath": "python-more_data_structures.4-only_diff_elements",
+        "description": "python-more_data_structures.4-only_diff_elements",
+        "peekOfCode": "def only_diff_elements(set_1, set_2):\n    return set_1 ^ set_2",
+        "detail": "python-more_data_structures.4-only_diff_elements",
+        "documentation": {}
+    },
+    {
+        "label": "number_keys",
+        "kind": 2,
+        "importPath": "python-more_data_structures.5-number_keys",
+        "description": "python-more_data_structures.5-number_keys",
+        "peekOfCode": "def number_keys(a_dictionary):\n    return len(a_dictionary.keys())",
+        "detail": "python-more_data_structures.5-number_keys",
+        "documentation": {}
+    },
+    {
+        "label": "print_sorted_dictionary",
+        "kind": 2,
+        "importPath": "python-more_data_structures.6-print_sorted_dictionary",
+        "description": "python-more_data_structures.6-print_sorted_dictionary",
+        "peekOfCode": "def print_sorted_dictionary(a_dictionary):\n    dicionary_s = sorted(a_dictionary.items())\n    for key, value in dicionary_s:\n        print('{0}: {1}'.format(key, value))",
+        "detail": "python-more_data_structures.6-print_sorted_dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "update_dictionary",
+        "kind": 2,
+        "importPath": "python-more_data_structures.7-update_dictionary",
+        "description": "python-more_data_structures.7-update_dictionary",
+        "peekOfCode": "def update_dictionary(a_dictionary, key, value):\n    a_dictionary[key] = value\n    return a_dictionary",
+        "detail": "python-more_data_structures.7-update_dictionary",
+        "documentation": {}
+    },
+    {
+        "label": "simple_delete",
+        "kind": 2,
+        "importPath": "python-more_data_structures.8-simple_delete",
+        "description": "python-more_data_structures.8-simple_delete",
+        "peekOfCode": "def simple_delete(a_dictionary, key=\"\"):\n    if key in a_dictionary:\n        del a_dictionary[key]\n    return a_dictionary",
+        "detail": "python-more_data_structures.8-simple_delete",
+        "documentation": {}
+    },
+    {
+        "label": "multiply_by_2",
+        "kind": 2,
+        "importPath": "python-more_data_structures.9-multiply_by_2",
+        "description": "python-more_data_structures.9-multiply_by_2",
+        "peekOfCode": "def multiply_by_2(a_dictionary):\n    temp_dictionary = a_dictionary.copy()\n    for key, value in temp_dictionary.items():\n        temp_dictionary[key] = value * 2\n    return temp_dictionary",
+        "detail": "python-more_data_structures.9-multiply_by_2",
+        "documentation": {}
+    },
+    {
+        "label": "TestMaxInteger",
+        "kind": 6,
+        "importPath": "python-test_driven_development.tests.6-max_integer_test",
+        "description": "python-test_driven_development.tests.6-max_integer_test",
+        "peekOfCode": "class TestMaxInteger(unittest.TestCase):\n    \"\"\"\n    A class to test a max integer function\n    \"\"\"\n    def test_max_integer(self):\n        \"\"\"\n        Test the max integer in a list of integers when the integers\n        are positive or negative numbers\n        \"\"\"\n        self.assertIsNone(max_integer([]))",
+        "detail": "python-test_driven_development.tests.6-max_integer_test",
+        "documentation": {}
+    },
+    {
+        "label": "max_integer",
+        "kind": 5,
+        "importPath": "python-test_driven_development.tests.6-max_integer_test",
+        "description": "python-test_driven_development.tests.6-max_integer_test",
+        "peekOfCode": "max_integer = __import__('6-max_integer').max_integer\nclass TestMaxInteger(unittest.TestCase):\n    \"\"\"\n    A class to test a max integer function\n    \"\"\"\n    def test_max_integer(self):\n        \"\"\"\n        Test the max integer in a list of integers when the integers\n        are positive or negative numbers\n        \"\"\"",
+        "detail": "python-test_driven_development.tests.6-max_integer_test",
+        "documentation": {}
+    },
+    {
+        "label": "add_integer",
+        "kind": 2,
+        "importPath": "python-test_driven_development.0-add_integer",
+        "description": "python-test_driven_development.0-add_integer",
+        "peekOfCode": "def add_integer(a, b=98):\n    \"\"\"Adds two numbers\n    Performs the addition between two numbers.\n    Args:\n        a (:obj:`int, float`): The first number.\n        b (:obj:`int, float`, optional): The second number.\n    Returns:\n        int: The result of the addition.\n    \"\"\"\n    if not isinstance(a, (int, float)):",
+        "detail": "python-test_driven_development.0-add_integer",
+        "documentation": {}
+    },
+    {
+        "label": "add_integer",
+        "kind": 5,
+        "importPath": "python-test_driven_development.0-main",
+        "description": "python-test_driven_development.0-main",
+        "peekOfCode": "add_integer = __import__('0-add_integer').add_integer\nprint(add_integer(1, 2))\nprint(add_integer(100, -2))\nprint(add_integer(2))\nprint(add_integer(100.3, -2))\ntry:\n    print(add_integer(4, \"School\"))\nexcept Exception as e:\n    print(e)\ntry:",
+        "detail": "python-test_driven_development.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "matrix_divided",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def matrix_divided(matrix, div):\n    \"\"\"Divides all elements of a matrix.\n    This function takes the data sent by the user to verify\n    that the matrix contains lists within it and that each\n    list contains integer or floating type numbers.\n    The result of the splitting operation is then added to a\n    new list in a new matrix with the same matrix structure\n    given by the user.\n    In case the format of the matrix is incorrect\n    or the divisor is not a number, this function",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_list",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def check_for_list(value):\n    \"\"\"\n    Check if the value is of type list\n    Args:\n        value (any): The value to verify.\n    Raises:\n        TypeError: If `value` isn't a list.\n    \"\"\"\n    if type(value) is not list or len(value) == 0:\n        raises_matrix_type_error()",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_divisor",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def check_for_divisor(div):\n    \"\"\"\n    Check if the divisor is integer, float or zero\n    Args:\n        div (any): The divisor to verify.\n    Raises:\n        TypeError: If `value` isn't integer or float.\n        ZeroDivisionError: If `div` is equal to `0`.\n    \"\"\"\n    if check_for_number(div) is False:",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_number",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def check_for_number(value):\n    \"\"\"Check if the value is integer or float\n    Args:\n        value (any): The value to verify.\n    Returns:\n        bool: True if successful, False otherwise.\n    \"\"\"\n    if type(value) is not int and type(value) is not float:\n        return False\n    \"\"\" Check for a NaN value \"\"\"",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "check_row_size_inconsistency",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def check_row_size_inconsistency(elem_sizes, row):\n    \"\"\"Checks the size consistency of rows in a matrix\n    Check if all rows in the matrix are inconsistently sized\n    Args:\n        elem_sizes (:obj:`set` of :obj:`int`): Size of each row matrix.\n        row (list): A row with elements to divide.\n    Returns:\n        set: A unique consistent size between all rows.\n    Raises:\n        TypeError: If `elem_sizes` has more than one size in its contents.",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "raises_matrix_type_error",
+        "kind": 2,
+        "importPath": "python-test_driven_development.2-matrix_divided",
+        "description": "python-test_driven_development.2-matrix_divided",
+        "peekOfCode": "def raises_matrix_type_error():\n    \"\"\"Raises a Matrix TypeError\n    Raises:\n        TypeError: If `matrix` list of lists of integers or floats.\n    \"\"\"\n    raise TypeError('matrix must be a matrix \\\n(list of lists) of integers/floats')",
+        "detail": "python-test_driven_development.2-matrix_divided",
+        "documentation": {}
+    },
+    {
+        "label": "say_my_name",
+        "kind": 2,
+        "importPath": "python-test_driven_development.3-say_my_name",
+        "description": "python-test_driven_development.3-say_my_name",
+        "peekOfCode": "def say_my_name(first_name, last_name=\"\"):\n    \"\"\"\n    Prints the names\n    Args:\n        first_name (str): The first name of anything.\n        last_name (str): The last name of anything.\n    Raises:\n        TypeError: If `first_name` and `last_name` aren't strings.\n    \"\"\"\n    if type(first_name) is not str:",
+        "detail": "python-test_driven_development.3-say_my_name",
+        "documentation": {}
+    },
+    {
+        "label": "print_square",
+        "kind": 2,
+        "importPath": "python-test_driven_development.4-print_square",
+        "description": "python-test_driven_development.4-print_square",
+        "peekOfCode": "def print_square(size):\n    \"\"\"\n    Prints the names\n    Args:\n        size (int): The size of the square to prints.\n    Raises:\n        TypeError: If `size` isn't integer.\n        ValueError: If `size` is less than 0.\n    \"\"\"\n    if type(size) is not int:",
+        "detail": "python-test_driven_development.4-print_square",
+        "documentation": {}
+    },
+    {
+        "label": "text_indentation",
+        "kind": 2,
+        "importPath": "python-test_driven_development.5-text_indentation",
+        "description": "python-test_driven_development.5-text_indentation",
+        "peekOfCode": "def text_indentation(text):\n    \"\"\"\n    Prints a text with indentation\n    Args:\n        text (str): The text to prints.\n    Raises:\n        TypeError: If `text` isn't string.\n    \"\"\"\n    if type(text) is not str:\n        raise TypeError('text must be a string')",
+        "detail": "python-test_driven_development.5-text_indentation",
+        "documentation": {}
+    },
+    {
+        "label": "max_integer",
+        "kind": 2,
+        "importPath": "python-test_driven_development.6-max_integer",
+        "description": "python-test_driven_development.6-max_integer",
+        "peekOfCode": "def max_integer(list=[]):\n    \"\"\"Function to find and return the max integer in a list of integers\n        If the list is empty, the function returns None\n    \"\"\"\n    if len(list) == 0:\n        return None\n    result = list[0]\n    i = 1\n    while i < len(list):\n        if list[i] > result:",
+        "detail": "python-test_driven_development.6-max_integer",
+        "documentation": {}
+    }
+]
