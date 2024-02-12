@@ -3,4 +3,6 @@
 
 
 def lookup(obj):
+    """new comment """
+
     return dir(obj)

@@ -565,7 +565,7 @@
         "kind": 2,
         "importPath": "python-inheritance.0-lookup",
         "description": "python-inheritance.0-lookup",
-        "peekOfCode": "def lookup(obj):\n    return dir(obj)",
+        "peekOfCode": "def lookup(obj):\n    \"\"\"new comment \"\"\"\n    return dir(obj)",
         "detail": "python-inheritance.0-lookup",
         "documentation": {}
     },
@@ -682,7 +682,7 @@
         "kind": 2,
         "importPath": "python-inheritance.2-is_same_class",
         "description": "python-inheritance.2-is_same_class",
-        "peekOfCode": "def is_same_class(obj, a_class):\n    return type(obj) is a_class",
+        "peekOfCode": "def is_same_class(obj, a_class):\n    \"\"\"define my list\"\"\"\n    return type(obj) is a_class",
         "detail": "python-inheritance.2-is_same_class",
         "documentation": {}
     },
@@ -691,7 +691,7 @@
         "kind": 2,
         "importPath": "python-inheritance.3-is_kind_of_class",
         "description": "python-inheritance.3-is_kind_of_class",
-        "peekOfCode": "def is_kind_of_class(obj, a_class):\n    return isinstance(obj, a_class)",
+        "peekOfCode": "def is_kind_of_class(obj, a_class):\n    \"\"\" class MyList \"\"\"\n    return isinstance(obj, a_class)",
         "detail": "python-inheritance.3-is_kind_of_class",
         "documentation": {}
     },
@@ -700,7 +700,7 @@
         "kind": 2,
         "importPath": "python-inheritance.4-inherits_from",
         "description": "python-inheritance.4-inherits_from",
-        "peekOfCode": "def inherits_from(obj, a_class):\n    return issubclass(type(obj), a_class) and type(obj) is not a_class",
+        "peekOfCode": "def inherits_from(obj, a_class):\n    \"\"\"define my list\"\"\"\n    return issubclass(type(obj), a_class) and type(obj) is not a_class",
         "detail": "python-inheritance.4-inherits_from",
         "documentation": {}
     },
