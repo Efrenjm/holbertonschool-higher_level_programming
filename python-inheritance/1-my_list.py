@@ -6,5 +6,8 @@ class MyList(list):
     """ class MyList """
 
     def print_sorted(self):
-        sorted_list = sorted(self)
-        print(sorted_list)
+        try:
+            sorted_list = sorted(self)
+            print(sorted_list)
+        except Exception as e:
+            pass

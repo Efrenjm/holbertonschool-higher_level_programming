@@ -619,7 +619,7 @@
         "kind": 6,
         "importPath": "python-inheritance.1-my_list",
         "description": "python-inheritance.1-my_list",
-        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
+        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        try:\n            sorted_list = sorted(self)\n            print(sorted_list)\n        except Exception as e:\n            pass",
         "detail": "python-inheritance.1-my_list",
         "documentation": {}
     },
@@ -696,6 +696,24 @@
         "documentation": {}
     },
     {
+        "label": "is_kind_of_class",
+        "kind": 5,
+        "importPath": "python-inheritance.3-main",
+        "description": "python-inheritance.3-main",
+        "peekOfCode": "is_kind_of_class = __import__('3-is_kind_of_class').is_kind_of_class\na = 1\nif is_kind_of_class(a, int):\n    print(\"{} comes from {}\".format(a, int.__name__))\nif is_kind_of_class(a, float):\n    print(\"{} comes from {}\".format(a, float.__name__))\nif is_kind_of_class(a, object):\n    print(\"{} comes from {}\".format(a, object.__name__))",
+        "detail": "python-inheritance.3-main",
+        "documentation": {}
+    },
+    {
+        "label": "a",
+        "kind": 5,
+        "importPath": "python-inheritance.3-main",
+        "description": "python-inheritance.3-main",
+        "peekOfCode": "a = 1\nif is_kind_of_class(a, int):\n    print(\"{} comes from {}\".format(a, int.__name__))\nif is_kind_of_class(a, float):\n    print(\"{} comes from {}\".format(a, float.__name__))\nif is_kind_of_class(a, object):\n    print(\"{} comes from {}\".format(a, object.__name__))",
+        "detail": "python-inheritance.3-main",
+        "documentation": {}
+    },
+    {
         "label": "inherits_from",
         "kind": 2,
         "importPath": "python-inheritance.4-inherits_from",
@@ -729,6 +747,24 @@
         "description": "python-inheritance.7-base_geometry",
         "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")",
         "detail": "python-inheritance.7-base_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-inheritance.8-main",
+        "description": "python-inheritance.8-main",
+        "peekOfCode": "Rectangle = __import__('8-rectangle').Rectangle\nr = Rectangle(3, 5)\nprint(r)\nprint(dir(r))\ntry:\n    print(\"Rectangle: {} - {}\".format(r.width, r.height))\nexcept Exception as e:\n    print(\"[{}] {}\".format(e.__class__.__name__, e))\ntry:\n    r2 = Rectangle(4, True)",
+        "detail": "python-inheritance.8-main",
+        "documentation": {}
+    },
+    {
+        "label": "r",
+        "kind": 5,
+        "importPath": "python-inheritance.8-main",
+        "description": "python-inheritance.8-main",
+        "peekOfCode": "r = Rectangle(3, 5)\nprint(r)\nprint(dir(r))\ntry:\n    print(\"Rectangle: {} - {}\".format(r.width, r.height))\nexcept Exception as e:\n    print(\"[{}] {}\".format(e.__class__.__name__, e))\ntry:\n    r2 = Rectangle(4, True)\nexcept Exception as e:",
+        "detail": "python-inheritance.8-main",
         "documentation": {}
     },
     {
