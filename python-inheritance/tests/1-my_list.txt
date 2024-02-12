@@ -1,15 +1,107 @@
-Test Case 1:
+===============================
+0. Sorted Print for MyList
+===============================
 
-Input: [3, 1, 2]
-Expected Output: [1, 2, 3]
-Explanation: The input list [3, 1, 2] is sorted in ascending order to produce the output [1, 2, 3].
-Test Case 2:
+Import class:
+==============
+    >>> from my_list import MyList
 
-Input: [-1, 0, 5, 2]
-Expected Output: [-1, 0, 2, 5]
-Explanation: The input list [-1, 0, 5, 2] is sorted in ascending order to produce the output [-1, 0, 2, 5].
-Test Case 3:
 
-Input: [5, 5, 5, 5]
-Expected Output: [5, 5, 5, 5]
-Explanation: The input list [5, 5, 5, 5] is already sorted, so the output remains the same.
+Class:
+======
+MyList - A custom list class that inherits from list and provides a method to print the list in sorted order.
+
+
+Public Method:
+==============
+    def print_sorted(self):
+        """
+        Prints the list sorted in ascending order.
+
+        :return: None
+        """
+
+Operations:
+===========
+The elements of the list must be integers. If any element is not an integer, it will raise a TypeError exception with the message 'All elements must be integers'.
+
+
+Non-Parameters
+=========================
+Test case #0: A test case for an empty list
+
+    >>> my_list = MyList([])
+    >>> my_list.print_sorted()
+    []
+
+Test case #1: A test case for a list with a single element
+
+    >>> my_list = MyList([5])
+    >>> my_list.print_sorted()
+    [5]
+
+Test case #2: A test case for a list with multiple elements
+
+    >>> my_list = MyList([3, 1, 4, 1, 5, 9, 2])
+    >>> my_list.print_sorted()
+    [1, 1, 2, 3, 4, 5, 9]
+
+
+Numbers
+==================
+Test case #3: A test case for a list with positive integers
+
+    >>> my_list = MyList([3, 1, 2])
+    >>> my_list.print_sorted()
+    [1, 2, 3]
+
+Test case #4: A test case for a list with negative integers
+
+    >>> my_list = MyList([-3, -1, -2])
+    >>> my_list.print_sorted()
+    [-3, -2, -1]
+
+Test case #5: A test case for a list with mixed positive and negative integers
+
+    >>> my_list = MyList([-3, 1, -2, 0, 5])
+    >>> my_list.print_sorted()
+    [-3, -2, 0, 1, 5]
+
+Test case #6: A test case for a list with repeated integers
+
+    >>> my_list = MyList([3, 3, 1, 1, 2, 2])
+    >>> my_list.print_sorted()
+    [1, 1, 2, 2, 3, 3]
+
+Non-Numbers
+======================
+Test case #7: A test case for a list with non-integer elements
+
+    >>> my_list = MyList([1, 2, 'a', 4])
+    Traceback (most recent call last):
+        ...
+    TypeError: All elements must be integers
+
+Test case #8: A test case for a list with a mix of integers and non-integer elements
+
+    >>> my_list = MyList([1, 'b', 3, 4])
+    Traceback (most recent call last):
+        ...
+    TypeError: All elements must be integers
+
+Test case #9: A test case for a list with a float element
+
+    >>> my_list = MyList([1, 2, 3.5, 4])
+    Traceback (most recent call last):
+        ...
+    TypeError: All elements must be integers
+
+Types
+======================
+Test case #10: A test case to check the returned type after sorting and printing
+
+    >>> my_list = MyList([3, 1, 2])
+    >>> result = my_list.print_sorted()
+    >>> type(result)
+    <class 'NoneType'>
+    
