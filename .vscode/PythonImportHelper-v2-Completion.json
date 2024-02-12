@@ -561,6 +561,195 @@
         "documentation": {}
     },
     {
+        "label": "lookup",
+        "kind": 2,
+        "importPath": "python-inheritance.0-lookup",
+        "description": "python-inheritance.0-lookup",
+        "peekOfCode": "def lookup(obj):\n    return dir(obj)",
+        "detail": "python-inheritance.0-lookup",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass1",
+        "kind": 6,
+        "importPath": "python-inheritance.0-main",
+        "description": "python-inheritance.0-main",
+        "peekOfCode": "class MyClass1(object):\n    pass\nclass MyClass2(object):\n    my_attr1 = 3\n    def my_meth(self):\n        pass\nprint(lookup(MyClass1))\nprint(lookup(MyClass2))\nprint(lookup(int))",
+        "detail": "python-inheritance.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "MyClass2",
+        "kind": 6,
+        "importPath": "python-inheritance.0-main",
+        "description": "python-inheritance.0-main",
+        "peekOfCode": "class MyClass2(object):\n    my_attr1 = 3\n    def my_meth(self):\n        pass\nprint(lookup(MyClass1))\nprint(lookup(MyClass2))\nprint(lookup(int))",
+        "detail": "python-inheritance.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "lookup",
+        "kind": 5,
+        "importPath": "python-inheritance.0-main",
+        "description": "python-inheritance.0-main",
+        "peekOfCode": "lookup = __import__('0-lookup').lookup\nclass MyClass1(object):\n    pass\nclass MyClass2(object):\n    my_attr1 = 3\n    def my_meth(self):\n        pass\nprint(lookup(MyClass1))\nprint(lookup(MyClass2))\nprint(lookup(int))",
+        "detail": "python-inheritance.0-main",
+        "documentation": {}
+    },
+    {
+        "label": "MyList",
+        "kind": 6,
+        "importPath": "python-inheritance.1-my_list",
+        "description": "python-inheritance.1-my_list",
+        "peekOfCode": "class MyList(list):\n    \"\"\" class list \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
+        "detail": "python-inheritance.1-my_list",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.10-square",
+        "description": "python-inheritance.10-square",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "detail": "python-inheritance.10-square",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-inheritance.10-square",
+        "description": "python-inheritance.10-square",
+        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
+        "detail": "python-inheritance.10-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-inheritance.10-square",
+        "description": "python-inheritance.10-square",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"my class square geometry\"\"\"\n    def __init__(self, size):\n        super().__init__(size, size)\n        self.integer_validator(\"size\", size)\n        self.__size = size\n    def __str__(self):\n        return f\"[Square] {self.__size}/{self.__size}\"",
+        "detail": "python-inheritance.10-square",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.11-square",
+        "description": "python-inheritance.11-square",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "detail": "python-inheritance.11-square",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-inheritance.11-square",
+        "description": "python-inheritance.11-square",
+        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
+        "detail": "python-inheritance.11-square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
+        "importPath": "python-inheritance.11-square",
+        "description": "python-inheritance.11-square",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"my class square geometry\"\"\"\n    def __init__(self, size):\n        super().__init__(size, size)\n        self.integer_validator(\"size\", size)\n        self.__size = size\n    def __str__(self):\n        return f\"[Square] {self.__size}/{self.__size}\"",
+        "detail": "python-inheritance.11-square",
+        "documentation": {}
+    },
+    {
+        "label": "is_same_class",
+        "kind": 2,
+        "importPath": "python-inheritance.2-is_same_class",
+        "description": "python-inheritance.2-is_same_class",
+        "peekOfCode": "def is_same_class(obj, a_class):\n    return type(obj) == a_class",
+        "detail": "python-inheritance.2-is_same_class",
+        "documentation": {}
+    },
+    {
+        "label": "is_kind_of_class",
+        "kind": 2,
+        "importPath": "python-inheritance.3-is_kind_of_class",
+        "description": "python-inheritance.3-is_kind_of_class",
+        "peekOfCode": "def is_kind_of_class(obj, a_class):\n    return isinstance(obj, a_class)",
+        "detail": "python-inheritance.3-is_kind_of_class",
+        "documentation": {}
+    },
+    {
+        "label": "inherits_from",
+        "kind": 2,
+        "importPath": "python-inheritance.4-inherits_from",
+        "description": "python-inheritance.4-inherits_from",
+        "peekOfCode": "def inherits_from(obj, a_class):\n    return issubclass(type(obj), a_class) and type(obj) != a_class",
+        "detail": "python-inheritance.4-inherits_from",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.5-base_geometry",
+        "description": "python-inheritance.5-base_geometry",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    pass",
+        "detail": "python-inheritance.5-base_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.6-base_geometry",
+        "description": "python-inheritance.6-base_geometry",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")",
+        "detail": "python-inheritance.6-base_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.7-base_geometry",
+        "description": "python-inheritance.7-base_geometry",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")",
+        "detail": "python-inheritance.7-base_geometry",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.8-rectangle",
+        "description": "python-inheritance.8-rectangle",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "detail": "python-inheritance.8-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-inheritance.8-rectangle",
+        "description": "python-inheritance.8-rectangle",
+        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height",
+        "detail": "python-inheritance.8-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 6,
+        "importPath": "python-inheritance.9-rectangle",
+        "description": "python-inheritance.9-rectangle",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "detail": "python-inheritance.9-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 6,
+        "importPath": "python-inheritance.9-rectangle",
+        "description": "python-inheritance.9-rectangle",
+        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
+        "detail": "python-inheritance.9-rectangle",
+        "documentation": {}
+    },
+    {
         "label": "Rectangle",
         "kind": 5,
         "importPath": "python-more_classes.0-main",
