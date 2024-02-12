@@ -619,7 +619,7 @@
         "kind": 6,
         "importPath": "python-inheritance.1-my_list",
         "description": "python-inheritance.1-my_list",
-        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        try:\n            sorted_list = sorted(self)\n            print(sorted_list)\n        except Exception as e:\n            pass",
+        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
         "detail": "python-inheritance.1-my_list",
         "documentation": {}
     },
