@@ -106,7 +106,7 @@
         "kind": 6,
         "importPath": "python-classes.1-square",
         "description": "python-classes.1-square",
-        "peekOfCode": "class Square:\n    \"\"\"a square class\"\"\"\n    def __init__(self, size):\n        \"\"\"initialize a square\n        Args:\n            size (int): The size of the new square\n        \"\"\"\n        self.__size = size",
+        "peekOfCode": "class Square:\n    \"\"\"a square class\"\"\"\n    def __init__(self, size):\n        self.__size = size",
         "detail": "python-classes.1-square",
         "documentation": {}
     },
@@ -288,6 +288,42 @@
         "description": "python-data_structures.9-max_integer",
         "peekOfCode": "def max_integer(my_list=[]):\n    if not my_list:\n        return None\n    numMax = min(my_list)\n    for i in my_list:\n        if i > numMax:\n            numMax = i\n    return numMax",
         "detail": "python-data_structures.9-max_integer",
+        "documentation": {}
+    },
+    {
+        "label": "copy_list",
+        "kind": 2,
+        "importPath": "python-everything_is_object.19-copy_list",
+        "description": "python-everything_is_object.19-copy_list",
+        "peekOfCode": "def copy_list(a_list):\n    return a_list[:]",
+        "detail": "python-everything_is_object.19-copy_list",
+        "documentation": {}
+    },
+    {
+        "label": "copy_list",
+        "kind": 5,
+        "importPath": "python-everything_is_object.19-main",
+        "description": "python-everything_is_object.19-main",
+        "peekOfCode": "copy_list = __import__('19-copy_list').copy_list\nmy_list = [1, 2, 3]\nprint(my_list)\nnew_list = copy_list(my_list)\nprint(my_list)\nprint(new_list)\nprint(new_list == my_list)\nprint(new_list is my_list)",
+        "detail": "python-everything_is_object.19-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "python-everything_is_object.19-main",
+        "description": "python-everything_is_object.19-main",
+        "peekOfCode": "my_list = [1, 2, 3]\nprint(my_list)\nnew_list = copy_list(my_list)\nprint(my_list)\nprint(new_list)\nprint(new_list == my_list)\nprint(new_list is my_list)",
+        "detail": "python-everything_is_object.19-main",
+        "documentation": {}
+    },
+    {
+        "label": "new_list",
+        "kind": 5,
+        "importPath": "python-everything_is_object.19-main",
+        "description": "python-everything_is_object.19-main",
+        "peekOfCode": "new_list = copy_list(my_list)\nprint(my_list)\nprint(new_list)\nprint(new_list == my_list)\nprint(new_list is my_list)",
+        "detail": "python-everything_is_object.19-main",
         "documentation": {}
     },
     {
