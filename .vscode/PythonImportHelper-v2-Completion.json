@@ -97,7 +97,7 @@
         "kind": 6,
         "importPath": "python-classes.0-square",
         "description": "python-classes.0-square",
-        "peekOfCode": "class Square:\n\t\"\"\"Square class\"\"\"\n\tpass",
+        "peekOfCode": "class Square:\n    \"\"\"Square class\"\"\"\n    pass",
         "detail": "python-classes.0-square",
         "documentation": {}
     },
