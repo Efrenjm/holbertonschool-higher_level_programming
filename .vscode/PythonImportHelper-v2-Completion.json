@@ -619,7 +619,7 @@
         "kind": 6,
         "importPath": "python-inheritance.1-my_list",
         "description": "python-inheritance.1-my_list",
-        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
+        "peekOfCode": "class MyList(list):\n    \"\"\"\n    A class to customize the list class\n    \"\"\"\n    def print_sorted(self):\n        \"\"\"\n        Prints a list in ascending order\n        Sort a list and then prints on the output\n        \"\"\"\n        if issubclass(MyList, list):",
         "detail": "python-inheritance.1-my_list",
         "documentation": {}
     },
@@ -745,7 +745,7 @@
         "kind": 6,
         "importPath": "python-inheritance.7-base_geometry",
         "description": "python-inheritance.7-base_geometry",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"\n    A super class to implements geometrical shapes\n    \"\"\"\n    def area(self):\n        \"\"\"\n        Raises an exception when you call this function\n        \"\"\"\n        raise Exception('area() is not implemented')\n    def integer_validator(self, name, value):",
         "detail": "python-inheritance.7-base_geometry",
         "documentation": {}
     },

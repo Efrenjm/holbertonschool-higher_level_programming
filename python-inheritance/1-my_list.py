@@ -1,10 +1,20 @@
 #!/usr/bin/python3
-"""define my list"""
+"""
+A module to prints a list
+"""
 
 
 class MyList(list):
-    """ class MyList """
+    """
+    A class to customize the list class
+    """
 
     def print_sorted(self):
-        sorted_list = sorted(self)
-        print(sorted_list)
+        """
+        Prints a list in ascending order
+
+        Sort a list and then prints on the output
+        """
+
+        if issubclass(MyList, list):
+            print(sorted(self))
