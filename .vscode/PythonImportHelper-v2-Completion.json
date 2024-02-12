@@ -547,7 +547,7 @@
         "kind": 6,
         "importPath": "python-more_classes.0-rectangle",
         "description": "python-more_classes.0-rectangle",
-        "peekOfCode": "class Rectangle:\n\tpass",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self):\n        pass",
         "detail": "python-more_classes.0-rectangle",
         "documentation": {}
     },
@@ -592,7 +592,7 @@
         "kind": 6,
         "importPath": "python-more_classes.1-rectangle",
         "description": "python-more_classes.1-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):",
         "detail": "python-more_classes.1-rectangle",
         "documentation": {}
     },
@@ -637,7 +637,7 @@
         "kind": 6,
         "importPath": "python-more_classes.2-rectangle",
         "description": "python-more_classes.2-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):",
         "detail": "python-more_classes.2-rectangle",
         "documentation": {}
     },
@@ -682,7 +682,7 @@
         "kind": 6,
         "importPath": "python-more_classes.3-rectangle",
         "description": "python-more_classes.3-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):",
         "detail": "python-more_classes.3-rectangle",
         "documentation": {}
     },
@@ -718,7 +718,7 @@
         "kind": 6,
         "importPath": "python-more_classes.4-rectangle",
         "description": "python-more_classes.4-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):",
         "detail": "python-more_classes.4-rectangle",
         "documentation": {}
     },
@@ -745,7 +745,7 @@
         "kind": 6,
         "importPath": "python-more_classes.5-rectangle",
         "description": "python-more_classes.5-rectangle",
-        "peekOfCode": "class Rectangle:\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):\n        if not isinstance(value, int):",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n    @property\n    def width(self):\n        return self.__width\n    @width.setter\n    def width(self, value):",
         "detail": "python-more_classes.5-rectangle",
         "documentation": {}
     },
@@ -781,7 +781,7 @@
         "kind": 6,
         "importPath": "python-more_classes.6-rectangle",
         "description": "python-more_classes.6-rectangle",
-        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width\n    @width.setter",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    number_of_instances = 0\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
         "detail": "python-more_classes.6-rectangle",
         "documentation": {}
     },
@@ -853,7 +853,7 @@
         "kind": 6,
         "importPath": "python-more_classes.7-rectangle",
         "description": "python-more_classes.7-rectangle",
-        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):",
         "detail": "python-more_classes.7-rectangle",
         "documentation": {}
     },
@@ -907,7 +907,7 @@
         "kind": 6,
         "importPath": "python-more_classes.8-rectangle",
         "description": "python-more_classes.8-rectangle",
-        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):",
         "detail": "python-more_classes.8-rectangle",
         "documentation": {}
     },
@@ -934,7 +934,7 @@
         "kind": 6,
         "importPath": "python-more_classes.9-rectangle",
         "description": "python-more_classes.9-rectangle",
-        "peekOfCode": "class Rectangle:\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):\n        return self.__width",
+        "peekOfCode": "class Rectangle:\n    \"\"\"Rectangle class\"\"\"\n    number_of_instances = 0\n    print_symbol = '#'\n    def __init__(self, width=0, height=0):\n        self.width = width\n        self.height = height\n        Rectangle.number_of_instances += 1\n    @property\n    def width(self):",
         "detail": "python-more_classes.9-rectangle",
         "documentation": {}
     },
