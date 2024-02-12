@@ -15,6 +15,9 @@ class BaseGeometry:
             raise ValueError(f"{name} must be greater than 0")
 
 
+""" define base geometry """
+
+
 class Rectangle(BaseGeometry):
     """my class rectangle geometry"""
 

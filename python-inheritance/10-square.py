@@ -15,6 +15,9 @@ class BaseGeometry:
             raise ValueError(f"{name} must be greater than 0")
 
 
+""" define base geometry """
+
+
 class Rectangle(BaseGeometry):
     """my class rectangle geometry"""
 
@@ -30,6 +33,9 @@ class Rectangle(BaseGeometry):
 
     def __str__(self):
         return f"[Rectangle] {self.__width}/{self.__height}"
+
+
+""" define base geometry """
 
 
 class Square(Rectangle):

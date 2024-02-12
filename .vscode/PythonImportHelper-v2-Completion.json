@@ -628,7 +628,7 @@
         "kind": 6,
         "importPath": "python-inheritance.10-square",
         "description": "python-inheritance.10-square",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
         "detail": "python-inheritance.10-square",
         "documentation": {}
     },
@@ -655,7 +655,7 @@
         "kind": 6,
         "importPath": "python-inheritance.11-square",
         "description": "python-inheritance.11-square",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
         "detail": "python-inheritance.11-square",
         "documentation": {}
     },
@@ -772,7 +772,7 @@
         "kind": 6,
         "importPath": "python-inheritance.8-rectangle",
         "description": "python-inheritance.8-rectangle",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
         "detail": "python-inheritance.8-rectangle",
         "documentation": {}
     },
@@ -790,7 +790,7 @@
         "kind": 6,
         "importPath": "python-inheritance.9-rectangle",
         "description": "python-inheritance.9-rectangle",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\nclass Rectangle(BaseGeometry):",
+        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
         "detail": "python-inheritance.9-rectangle",
         "documentation": {}
     },
