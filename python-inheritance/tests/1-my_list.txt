@@ -1,0 +1,15 @@
+Test Case 1:
+
+Input: [3, 1, 2]
+Expected Output: [1, 2, 3]
+Explanation: The input list [3, 1, 2] is sorted in ascending order to produce the output [1, 2, 3].
+Test Case 2:
+
+Input: [-1, 0, 5, 2]
+Expected Output: [-1, 0, 2, 5]
+Explanation: The input list [-1, 0, 5, 2] is sorted in ascending order to produce the output [-1, 0, 2, 5].
+Test Case 3:
+
+Input: [5, 5, 5, 5]
+Expected Output: [5, 5, 5, 5]
+Explanation: The input list [5, 5, 5, 5] is already sorted, so the output remains the same.

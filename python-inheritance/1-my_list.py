@@ -3,7 +3,7 @@
 
 
 class MyList(list):
-    """ class list """
+    """ class MyList """
 
     def print_sorted(self):
         sorted_list = sorted(self)

@@ -1,0 +1,24 @@
+Test Case 1:
+
+Description: Testing area() method with a class instance that doesn't implement it
+Input: geometry = BaseGeometry()
+Expected Output: Exception raised with message "area() is not implemented"
+Explanation: When calling the area() method on a BaseGeometry instance, an Exception is raised indicating that the method is not implemented.
+Test Case 2:
+
+Description: Testing integer_validator() method with a valid integer value
+Input: geometry = BaseGeometry(); geometry.integer_validator("side_length", 5)
+Expected Output: No exception raised
+Explanation: The integer_validator() method is called with a valid integer value (5), so no exception should be raised.
+Test Case 3:
+
+Description: Testing integer_validator() method with a non-integer value
+Input: geometry = BaseGeometry(); geometry.integer_validator("side_length", "not_an_integer")
+Expected Output: TypeError raised with message "side_length must be an integer"
+Explanation: The integer_validator() method is called with a non-integer value ("not_an_integer"), so a TypeError should be raised with the specified error message.
+Test Case 4:
+
+Description: Testing integer_validator() method with a negative integer value
+Input: geometry = BaseGeometry(); geometry.integer_validator("side_length", -5)
+Expected Output: ValueError raised with message "side_length must be greater than 0"
+Explanation: The integer_validator() method is called with a negative integer value (-5), so a ValueError should be raised with the specified error message.

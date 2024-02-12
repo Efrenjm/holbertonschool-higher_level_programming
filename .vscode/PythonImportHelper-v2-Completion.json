@@ -598,10 +598,28 @@
     },
     {
         "label": "MyList",
+        "kind": 5,
+        "importPath": "python-inheritance.1-main",
+        "description": "python-inheritance.1-main",
+        "peekOfCode": "MyList = __import__('1-my_list').MyList\nmy_list = MyList()\nmy_list.append(1)\nmy_list.append(4)\nmy_list.append(2)\nmy_list.append(3)\nmy_list.append(5)\nprint(my_list)\nmy_list.print_sorted()\nprint(my_list)",
+        "detail": "python-inheritance.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "my_list",
+        "kind": 5,
+        "importPath": "python-inheritance.1-main",
+        "description": "python-inheritance.1-main",
+        "peekOfCode": "my_list = MyList()\nmy_list.append(1)\nmy_list.append(4)\nmy_list.append(2)\nmy_list.append(3)\nmy_list.append(5)\nprint(my_list)\nmy_list.print_sorted()\nprint(my_list)",
+        "detail": "python-inheritance.1-main",
+        "documentation": {}
+    },
+    {
+        "label": "MyList",
         "kind": 6,
         "importPath": "python-inheritance.1-my_list",
         "description": "python-inheritance.1-my_list",
-        "peekOfCode": "class MyList(list):\n    \"\"\" class list \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
+        "peekOfCode": "class MyList(list):\n    \"\"\" class MyList \"\"\"\n    def print_sorted(self):\n        sorted_list = sorted(self)\n        print(sorted_list)",
         "detail": "python-inheritance.1-my_list",
         "documentation": {}
     },
