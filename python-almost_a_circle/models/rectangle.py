@@ -124,6 +124,14 @@ class Rectangle(Base):
 
         return self.width * self.height
 
+    def display(self):
+        """
+        Prints the rectangle to standard output using '#' characters.
+        """
+
+        for _ in range(self.height):
+            print("#" * self.width)
+
     @property
     def width(self):
         return self.__width
