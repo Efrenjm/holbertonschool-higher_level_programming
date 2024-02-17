@@ -8,14 +8,6 @@
         "documentation": {}
     },
     {
-        "label": "Base",
-        "importPath": "models.base",
-        "description": "models.base",
-        "isExtraImport": true,
-        "detail": "models.base",
-        "documentation": {}
-    },
-    {
         "label": "Rectangle",
         "importPath": "models.rectangle",
         "description": "models.rectangle",
@@ -147,7 +139,7 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.rectangle",
         "description": "python-almost_a_circle.models.rectangle",
-        "peekOfCode": "class Rectangle(Base):\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width, height, x=0, y=0, id=None):\n        super().__init__(id)\n        self.width = width\n        self.height = height\n        self.x = x\n        self.y = y\n    @property\n    def width(self):",
+        "peekOfCode": "class Rectangle(Base):\n    \"\"\"\n    Rectangle class representing a rectangle with private attributes\n    and getters/setters.\n    Attributes:\n        width (int): The width of the rectangle.\n        height (int): The height of the rectangle.\n        x (int): The x-coordinate of the rectangle's top-left corner.\n        y (int): The y-coordinate of the rectangle's top-left corner.\n    \"\"\"",
         "detail": "python-almost_a_circle.models.rectangle",
         "documentation": {}
     },
