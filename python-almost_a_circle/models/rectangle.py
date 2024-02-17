@@ -47,7 +47,14 @@ class Rectangle(Base):
 
     def _validate_width(self, value):
         """
-        validate width
+        Validate width
+
+        Args:
+            value (int): The width of the rectangle. Must be greater than 0.
+
+        Raises:
+            ValueError: If value is not positive.
+            TypeError: If value is not an integer.
         """
 
         if not isinstance(value, int):
@@ -57,7 +64,14 @@ class Rectangle(Base):
 
     def _validate_height(self, value):
         """
-        validate width
+        Validate height
+
+        Args:
+            value (int): The height of the rectangle. Must be greater than 0.
+
+        Raises:
+            ValueError: If value is not positive.
+            TypeError: If value is not an integer.
         """
 
         if not isinstance(value, int):
@@ -67,7 +81,14 @@ class Rectangle(Base):
 
     def _validate_x(self, value):
         """
-        validate width
+        Validate x
+
+        Args:
+            value (int): The x-coordinate of the rectangle's top-left
+
+        Raises:
+            ValueError: If value is not positive.
+            TypeError: If value is not an integer.
         """
 
         if not isinstance(value, int):
@@ -77,13 +98,31 @@ class Rectangle(Base):
 
     def _validate_y(self, value):
         """
-        validate width
+        Validate y
+
+        Args:
+            y (int, optional): The y-coordinate of the rectangle's top-left
+                corner. Defaults to 0.
+
+        Raises:
+            ValueError: If value is not positive.
+            TypeError: If value is not an integer.
         """
 
         if not isinstance(value, int):
             raise TypeError("y must be an integer")
         if value < 0:
             raise ValueError("y must be >= 0")
+
+    def area(self):
+        """
+        Calculates and returns the area of the rectangle.
+
+        Returns:
+            int: The area of the rectangle.
+        """
+
+        return self.width * self.height
 
     @property
     def width(self):
