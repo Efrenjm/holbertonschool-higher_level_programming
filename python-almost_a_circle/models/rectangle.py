@@ -113,5 +113,3 @@ class Rectangle(Base):
 
         return f"Rectangle(id={self.id}, width={self.width}," \
             + f"height={self.height}, x={self.x}, y={self.y}"
-
-    # Additional methods or properties can be added as needed

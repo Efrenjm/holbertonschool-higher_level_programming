@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """ 1-main """
 from models.rectangle import Rectangle
-    """Rectangle class
-    """
+
 
 
 if __name__ == "__main__":
