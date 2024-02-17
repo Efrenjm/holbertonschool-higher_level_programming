@@ -107,7 +107,9 @@ class Rectangle(Base):
         Returns a string representation of the Rectangle object.
 
         Returns:
-            str: A formatted string containing the object's ID, width, height, x, and y coordinates.
+            str: A formatted string containing the object's ID, width, height,
+            x, and y coordinates.
         """
 
-        return f"Rectangle(id={self.id}, width={self.width}, height={self.height}, x={self.x}, y={self.y})"
+        return f"Rectangle(id={self.id}, width={self.width}" \
+            + ", height={self.height}, x={self.x}, y={self.y})"
