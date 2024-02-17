@@ -40,5 +40,3 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-
-        #self._validate_dimensions()
