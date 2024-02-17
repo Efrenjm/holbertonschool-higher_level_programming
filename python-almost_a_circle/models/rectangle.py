@@ -167,3 +167,16 @@ class Rectangle(Base):
     def y(self, value):
         self._validate_y(value)
         self.__y = value
+
+    def __str__(self):
+        """
+        Returns a string representation of the Rectangle object
+        in the specified format.
+
+        Returns:
+            str: A formatted string containing the rectangle's
+                class, ID, coordinates, and dimensions.
+        """
+
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -" \
+            + f" {self.width}/{self.height}"
