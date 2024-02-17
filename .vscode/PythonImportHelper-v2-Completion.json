@@ -84,6 +84,23 @@
         "documentation": {}
     },
     {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "dumps",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
         "label": "unittest",
         "kind": 6,
         "isExtraImport": true,
@@ -615,48 +632,21 @@
         "documentation": {}
     },
     {
-        "label": "BaseGeometry",
-        "kind": 6,
-        "importPath": "python-inheritance.10-square",
-        "description": "python-inheritance.10-square",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
-        "detail": "python-inheritance.10-square",
-        "documentation": {}
-    },
-    {
-        "label": "Rectangle",
-        "kind": 6,
-        "importPath": "python-inheritance.10-square",
-        "description": "python-inheritance.10-square",
-        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
-        "detail": "python-inheritance.10-square",
-        "documentation": {}
-    },
-    {
         "label": "Square",
         "kind": 6,
         "importPath": "python-inheritance.10-square",
         "description": "python-inheritance.10-square",
-        "peekOfCode": "class Square(Rectangle):\n    \"\"\"my class square geometry\"\"\"\n    def __init__(self, size):\n        super().__init__(size, size)\n        self.integer_validator(\"size\", size)\n        self.__size = size\n    def __str__(self):\n        return f\"[Square] {self.__size}/{self.__size}\"",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, size):\n        self.integer_validator(\"size\", size)\n        super().__init__(size, size)\n        self.__size = size",
         "detail": "python-inheritance.10-square",
         "documentation": {}
     },
     {
-        "label": "BaseGeometry",
-        "kind": 6,
-        "importPath": "python-inheritance.11-square",
-        "description": "python-inheritance.11-square",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
-        "detail": "python-inheritance.11-square",
-        "documentation": {}
-    },
-    {
         "label": "Rectangle",
-        "kind": 6,
-        "importPath": "python-inheritance.11-square",
-        "description": "python-inheritance.11-square",
-        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
-        "detail": "python-inheritance.11-square",
+        "kind": 5,
+        "importPath": "python-inheritance.10-square",
+        "description": "python-inheritance.10-square",
+        "peekOfCode": "Rectangle = __import__('9-rectangle').Rectangle\nclass Square(Rectangle):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, size):\n        self.integer_validator(\"size\", size)\n        super().__init__(size, size)\n        self.__size = size",
+        "detail": "python-inheritance.10-square",
         "documentation": {}
     },
     {
@@ -664,7 +654,16 @@
         "kind": 6,
         "importPath": "python-inheritance.11-square",
         "description": "python-inheritance.11-square",
-        "peekOfCode": "class Square(Rectangle):\n    \"\"\"my class square geometry\"\"\"\n    def __init__(self, size):\n        super().__init__(size, size)\n        self.integer_validator(\"size\", size)\n        self.__size = size\n    def __str__(self):\n        return f\"[Square] {self.__size}/{self.__size}\"",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, size):\n        self.integer_validator(size, size)\n        super().__init__(size, size)\n        self.__size = size\n    def __str__(self):\n        return '[Square] ' + str(self.__size) + '/' + str(self.__size)",
+        "detail": "python-inheritance.11-square",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "kind": 5,
+        "importPath": "python-inheritance.11-square",
+        "description": "python-inheritance.11-square",
+        "peekOfCode": "Rectangle = __import__('9-rectangle').Rectangle\nclass Square(Rectangle):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, size):\n        self.integer_validator(size, size)\n        super().__init__(size, size)\n        self.__size = size\n    def __str__(self):",
         "detail": "python-inheritance.11-square",
         "documentation": {}
     },
@@ -682,7 +681,7 @@
         "kind": 2,
         "importPath": "python-inheritance.3-is_kind_of_class",
         "description": "python-inheritance.3-is_kind_of_class",
-        "peekOfCode": "def is_kind_of_class(obj, a_class):\n    \"\"\" class MyList \"\"\"\n    return isinstance(obj, a_class)",
+        "peekOfCode": "def is_kind_of_class(obj, a_class):\n    \"\"\"\n    Checks if `obj` is the same class or inherit from `a_class`\n    Args:\n        obj (any): The object to compare\n        a_class (any): The class to compare with the object\n    Returns:\n        `True` if the object is an instance or inherit from the\n        specified class; otherwise `False`\n    \"\"\"",
         "detail": "python-inheritance.3-is_kind_of_class",
         "documentation": {}
     },
@@ -759,20 +758,20 @@
         "documentation": {}
     },
     {
-        "label": "BaseGeometry",
-        "kind": 6,
-        "importPath": "python-inheritance.8-rectangle",
-        "description": "python-inheritance.8-rectangle",
-        "peekOfCode": "class BaseGeometry:\n    \"\"\"my class base geometry\"\"\"\n    def area(self):\n        raise Exception(\"area() is not implemented\")\n    def integer_validator(self, name, value):\n        if not isinstance(value, int):\n            raise TypeError(f\"{name} must be an integer\")\n        if value <= 0:\n            raise ValueError(f\"{name} must be greater than 0\")\n\"\"\" define base geometry \"\"\"",
-        "detail": "python-inheritance.8-rectangle",
-        "documentation": {}
-    },
-    {
         "label": "Rectangle",
         "kind": 6,
         "importPath": "python-inheritance.8-rectangle",
         "description": "python-inheritance.8-rectangle",
-        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height",
+        "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, width, height):\n        \"\"\"\n        initializes some values\n        \"\"\"\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)",
+        "detail": "python-inheritance.8-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "BaseGeometry",
+        "kind": 5,
+        "importPath": "python-inheritance.8-rectangle",
+        "description": "python-inheritance.8-rectangle",
+        "peekOfCode": "BaseGeometry = __import__('7-base_geometry').BaseGeometry\nclass Rectangle(BaseGeometry):\n    \"\"\"\n    Rectangle class\n    \"\"\"\n    def __init__(self, width, height):\n        \"\"\"\n        initializes some values\n        \"\"\"\n        self.integer_validator(\"width\", width)",
         "detail": "python-inheritance.8-rectangle",
         "documentation": {}
     },
@@ -792,6 +791,141 @@
         "description": "python-inheritance.9-rectangle",
         "peekOfCode": "class Rectangle(BaseGeometry):\n    \"\"\"my class rectangle geometry\"\"\"\n    def __init__(self, width, height):\n        super().__init__()\n        self.integer_validator(\"width\", width)\n        self.integer_validator(\"height\", height)\n        self.__width = width\n        self.__height = height\n    def area(self):\n        return self.__width * self.__height",
         "detail": "python-inheritance.9-rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "read_file",
+        "kind": 2,
+        "importPath": "python-input_output.0-read_file",
+        "description": "python-input_output.0-read_file",
+        "peekOfCode": "def read_file(filename=\"\"):\n    \"\"\"\n    init function\n    \"\"\"\n    with open(filename, encoding='utf-8') as f:\n        for line in f:\n            print(line, end='')",
+        "detail": "python-input_output.0-read_file",
+        "documentation": {}
+    },
+    {
+        "label": "write_file",
+        "kind": 2,
+        "importPath": "python-input_output.1-write_file",
+        "description": "python-input_output.1-write_file",
+        "peekOfCode": "def write_file(filename=\"\", text=\"\"):\n    \"\"\"\n    init function\n    \"\"\"\n    with open(filename, mode='w', encoding='utf-8') as f:\n        return f.write(text)",
+        "detail": "python-input_output.1-write_file",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "python-input_output.10-student",
+        "description": "python-input_output.10-student",
+        "peekOfCode": "class Student:\n    \"\"\"Represents a student with name, surname, and age.\"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"Initializes a new student.\n        Args:\n            first_name (str): The student's first name.\n            last_name (str): The student's last name.\n            age (int): The student's age.\n        \"\"\"\n        self.first_name = first_name",
+        "detail": "python-input_output.10-student",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "python-input_output.11-student",
+        "description": "python-input_output.11-student",
+        "peekOfCode": "class Student:\n    \"\"\"Represents a student with name, surname, and age,\n    providing serialization and deserialization.\"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"Initializes a new student.\n        Args:\n            first_name (str): The student's first name.\n            last_name (str): The student's last name.\n            age (int): The student's age.\n        \"\"\"",
+        "detail": "python-input_output.11-student",
+        "documentation": {}
+    },
+    {
+        "label": "pascal_triangle",
+        "kind": 2,
+        "importPath": "python-input_output.12-pascal_triangle",
+        "description": "python-input_output.12-pascal_triangle",
+        "peekOfCode": "def pascal_triangle(n):\n    \"\"\"\n    Generates the Pascal's triangle of size n.\n    Args:\n        n: The number of rows in the Pascal's triangle.\n    Returns:\n        A list of lists representing the Pascal's triangle.\n    \"\"\"\n    if n <= 0:\n        return []",
+        "detail": "python-input_output.12-pascal_triangle",
+        "documentation": {}
+    },
+    {
+        "label": "append_write",
+        "kind": 2,
+        "importPath": "python-input_output.2-append_write",
+        "description": "python-input_output.2-append_write",
+        "peekOfCode": "def append_write(filename=\"\", text=\"\"):\n    \"\"\"\n    init function\n    \"\"\"\n    with open(filename, mode='a', encoding='utf-8') as f:\n        return f.write(text)",
+        "detail": "python-input_output.2-append_write",
+        "documentation": {}
+    },
+    {
+        "label": "to_json_string",
+        "kind": 2,
+        "importPath": "python-input_output.3-to_json_string",
+        "description": "python-input_output.3-to_json_string",
+        "peekOfCode": "def to_json_string(my_obj):\n    \"\"\"\n    init function\n    \"\"\"\n    return dumps(my_obj)",
+        "detail": "python-input_output.3-to_json_string",
+        "documentation": {}
+    },
+    {
+        "label": "from_json_string",
+        "kind": 2,
+        "importPath": "python-input_output.4-from_json_string",
+        "description": "python-input_output.4-from_json_string",
+        "peekOfCode": "def from_json_string(my_str):\n    \"\"\"\n    Convierte una cadena JSON a un objeto de Python.\n    Args:\n        my_str: La cadena JSON a convertir.\n    Returns:\n        El objeto de Python representado por la cadena JSON.\n    \"\"\"\n    if not my_str:\n        return None",
+        "detail": "python-input_output.4-from_json_string",
+        "documentation": {}
+    },
+    {
+        "label": "save_to_json_file",
+        "kind": 2,
+        "importPath": "python-input_output.5-save_to_json_file",
+        "description": "python-input_output.5-save_to_json_file",
+        "peekOfCode": "def save_to_json_file(my_obj, filename):\n    \"\"\"\n    Guarda un objeto Python en un archivo de texto como JSON.\n    Args:\n        my_obj: El objeto Python a guardar.\n        filename: El nombre del archivo de texto.\n    \"\"\"\n    with open(filename, \"w\") as file:\n        json.dump(my_obj, file, indent=4)",
+        "detail": "python-input_output.5-save_to_json_file",
+        "documentation": {}
+    },
+    {
+        "label": "load_from_json_file",
+        "kind": 2,
+        "importPath": "python-input_output.6-load_from_json_file",
+        "description": "python-input_output.6-load_from_json_file",
+        "peekOfCode": "def load_from_json_file(filename):\n    \"\"\"\n    Carga un objeto Python desde un archivo JSON.\n    Args:\n        filename: El nombre del archivo JSON.\n    Returns:\n        El objeto Python representado en el archivo JSON.\n    \"\"\"\n    with open(filename, \"r\") as file:\n        return json.load(file)",
+        "detail": "python-input_output.6-load_from_json_file",
+        "documentation": {}
+    },
+    {
+        "label": "add_items_to_file",
+        "kind": 2,
+        "importPath": "python-input_output.7-add_item",
+        "description": "python-input_output.7-add_item",
+        "peekOfCode": "def add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
+        "detail": "python-input_output.7-add_item",
+        "documentation": {}
+    },
+    {
+        "label": "save_to_json_file",
+        "kind": 5,
+        "importPath": "python-input_output.7-add_item",
+        "description": "python-input_output.7-add_item",
+        "peekOfCode": "save_to_json_file = __import__('5-save_to_json_file').save_to_json_file\nload_from_json_file = __import__('6-load_from_json_file').load_from_json_file\ndef add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
+        "detail": "python-input_output.7-add_item",
+        "documentation": {}
+    },
+    {
+        "label": "load_from_json_file",
+        "kind": 5,
+        "importPath": "python-input_output.7-add_item",
+        "description": "python-input_output.7-add_item",
+        "peekOfCode": "load_from_json_file = __import__('6-load_from_json_file').load_from_json_file\ndef add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
+        "detail": "python-input_output.7-add_item",
+        "documentation": {}
+    },
+    {
+        "label": "class_to_json",
+        "kind": 2,
+        "importPath": "python-input_output.8-class_to_json",
+        "description": "python-input_output.8-class_to_json",
+        "peekOfCode": "def class_to_json(obj):\n    \"\"\"\n    Convierte un objeto de clase a un diccionario serializable en JSON.\n    Args:\n        obj: La instancia de la clase a convertir.\n    Returns:\n        Un diccionario que representa el objeto de clase.\n    \"\"\"\n    # Diccionario vacío para almacenar la representación del objeto\n    result = {}",
+        "detail": "python-input_output.8-class_to_json",
+        "documentation": {}
+    },
+    {
+        "label": "Student",
+        "kind": 6,
+        "importPath": "python-input_output.9-student",
+        "description": "python-input_output.9-student",
+        "peekOfCode": "class Student:\n    \"\"\"\n    Representa a un estudiante con nombre, apellido y edad.\n    \"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"\n        Inicializa un nuevo estudiante.\n        Args:\n          first_name: El nombre del estudiante.\n          last_name: El apellido del estudiante.",
+        "detail": "python-input_output.9-student",
         "documentation": {}
     },
     {
