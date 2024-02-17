@@ -104,15 +104,6 @@
     {
         "label": "Square",
         "kind": 6,
-        "importPath": "python-classes.1-square",
-        "description": "python-classes.1-square",
-        "peekOfCode": "class Square:\n    \"\"\"a square class\"\"\"\n    def __init__(self, size):\n        self.__size = size",
-        "detail": "python-classes.1-square",
-        "documentation": {}
-    },
-    {
-        "label": "Square",
-        "kind": 6,
         "importPath": "python-classes.2-square",
         "description": "python-classes.2-square",
         "peekOfCode": "class Square:\n    \"\"\"represents a square\"\"\"\n    def __init__(self, size=0):\n        \"\"\"Initializes a new Square.\n        Args:\n            size (int): The size of the new square\n        \"\"\"\n        if type(size) is not int:\n            raise TypeError('size must be an integer')\n        if size < 0:",
