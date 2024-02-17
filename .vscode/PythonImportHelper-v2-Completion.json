@@ -138,7 +138,7 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.base",
         "description": "python-almost_a_circle.models.base",
-        "peekOfCode": "class Base:\n    __nb_objects = 0\n    def __init__(self, id=None):\n        if id is not None:\n            self.id = id\n        else:\n            Base.__nb_objects += 1\n            self.id = Base.__nb_objects",
+        "peekOfCode": "class Base:\n    \"\"\"base class\"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        if id is not None:\n            self.id = id\n        else:\n            Base.__nb_objects += 1\n            self.id = Base.__nb_objects",
         "detail": "python-almost_a_circle.models.base",
         "documentation": {}
     },
@@ -147,7 +147,7 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.rectangle",
         "description": "python-almost_a_circle.models.rectangle",
-        "peekOfCode": "class Rectangle(Base):\n    def __init__(self, width, height, x=0, y=0, id=None):\n        super().__init__(id)\n        self.width = width\n        self.height = height\n        self.x = x\n        self.y = y\n    @property\n    def width(self):\n        return self.__width",
+        "peekOfCode": "class Rectangle(Base):\n    \"\"\"Rectangle class\"\"\"\n    def __init__(self, width, height, x=0, y=0, id=None):\n        super().__init__(id)\n        self.width = width\n        self.height = height\n        self.x = x\n        self.y = y\n    @property\n    def width(self):",
         "detail": "python-almost_a_circle.models.rectangle",
         "documentation": {}
     },
