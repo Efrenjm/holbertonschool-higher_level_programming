@@ -60,15 +60,15 @@ class Rectangle(Base):
 
     def _validate_x(self, value):
         if not isinstance(value, int):
-            raise TypeError("x-coordinate must be an integer")
+            raise TypeError("x must be an integer")
         if value < 0:
-            raise ValueError("x-coordinate must be >= 0")
+            raise ValueError("x must be >= 0")
 
     def _validate_y(self, value):
         if not isinstance(value, int):
-            raise TypeError("y-coordinate must be an integer")
+            raise TypeError("y must be an integer")
         if value < 0:
-            raise ValueError("y-coordinate must be >= 0")
+            raise ValueError("y must be >= 0")
 
     @property
     def width(self):
