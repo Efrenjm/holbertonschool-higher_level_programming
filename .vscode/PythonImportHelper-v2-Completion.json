@@ -138,7 +138,7 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.base",
         "description": "python-almost_a_circle.models.base",
-        "peekOfCode": "class Base:\n    \"\"\"base class\"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        if id is not None:\n            self.id = id\n        else:\n            Base.__nb_objects += 1\n            self.id = Base.__nb_objects",
+        "peekOfCode": "class Base:\n    \"\"\"\n    Base class for managing unique IDs and providing additional utilities for model classes.\n    \"\"\"\n    __nb_objects = 0  # Private class attribute for generating unique IDs\n    def __init__(self, id=None):\n        \"\"\"\n        Initializes the Base object.\n        Args:\n            id (int, optional): Optional ID to assign to the object. If not provided, a unique ID",
         "detail": "python-almost_a_circle.models.base",
         "documentation": {}
     },
