@@ -1,11 +1,11 @@
 #!/usr/bin/python3
-# models/base.py
-"""def """
+""" models/base.py """
 
 
 class Base:
     """
-    Base class for managing unique IDs and providing additional utilities for model classes.
+    Base class for managing unique IDs and providing additional
+    utilities for model classes.
     """
 
     __nb_objects = 0  # Private class attribute for generating unique IDs
@@ -15,8 +15,8 @@ class Base:
         Initializes the Base object.
 
         Args:
-            id (int, optional): Optional ID to assign to the object. If not provided, a unique ID
-                                is generated automatically.
+            id (int, optional): Optional ID to assign to the object.
+            If not provided, a unique ID is generated automatically.
 
         Raises:
             TypeError: If the provided `id` is not an integer.
