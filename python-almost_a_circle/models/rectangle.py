@@ -45,7 +45,6 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-        self._validate_dimensions()
 
     def _validate_width(self, value):
         if not isinstance(value, int):
