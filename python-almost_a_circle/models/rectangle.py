@@ -45,7 +45,6 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
 
-
     def _validate_width(self, value):
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
