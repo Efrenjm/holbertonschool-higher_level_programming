@@ -105,15 +105,3 @@ class Rectangle(Base):
     def y(self, value):
         self._validate_y(value)
         self.__y = value
-
-    def __str__(self):
-        """
-        Returns a string representation of the Rectangle object.
-
-        Returns:
-            str: A formatted string containing the object's ID, width, height,
-            x, and y coordinates.
-        """
-
-        return f"Rectangle(id={self.id}, width={self.width}" \
-            + ", height={self.height}, x={self.x}, y={self.y})"
