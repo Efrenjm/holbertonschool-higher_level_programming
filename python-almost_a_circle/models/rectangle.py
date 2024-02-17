@@ -48,27 +48,27 @@ class Rectangle(Base):
 
     def _validate_width(self, value):
         if not isinstance(value, int):
-            raise TypeError("Width must be an integer.")
+            raise TypeError("Width must be an integer")
         if value <= 0:
-            raise ValueError("Width must be positive.")
+            raise ValueError("Width must be > 0")
 
     def _validate_height(self, value):
         if not isinstance(value, int):
-            raise TypeError("Height must be an integer.")
+            raise TypeError("Height must be an integer")
         if value <= 0:
-            raise ValueError("Height must be positive.")
+            raise ValueError("Height must be > 0")
 
     def _validate_x(self, value):
         if not isinstance(value, int):
-            raise TypeError("x-coordinate must be an integer.")
+            raise TypeError("x-coordinate must be an integer")
         if value < 0:
-            raise ValueError("x-coordinate must be non-negative.")
+            raise ValueError("x-coordinate must be >= 0")
 
     def _validate_y(self, value):
         if not isinstance(value, int):
-            raise TypeError("y-coordinate must be an integer.")
+            raise TypeError("y-coordinate must be an integer")
         if value < 0:
-            raise ValueError("y-coordinate must be non-negative.")
+            raise ValueError("y-coordinate must be >= 0")
 
     # Getters and setters for width, height, x, and y
 
