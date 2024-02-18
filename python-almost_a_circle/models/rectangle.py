@@ -138,43 +138,46 @@ class Rectangle(Base):
 
     def update(self, *args):
         """
-        Updates the rectangle attributes with given arguments in specific order.
+        Updates the rectangle attributes with given arguments in
+        specific order.
 
         Args:
-            *args: Positional arguments representing the new values for ID,
-                   width, height, x, and y (in that order).
+            *args: Positional arguments representing the new values
+            for ID, width, height, x, and y (in that order).
 
         Raises:
-            TypeError: If the number of arguments is not 5 or any argument is not an integer.
-            ValueError: If width or height is not positive, or x or y is negative.
+            TypeError: If the number of arguments is not 5 or any
+                argument is not an integer.
+            ValueError: If width or height is not positive, or x
+                or y is negative.
         """
 
         if len(args) != 5:
             raise TypeError("update() requires exactly 5 arguments.")
 
-        new_id, new_width, new_height, new_x, new_y = args
+        id, width, height, x, y = args
 
-        if not isinstance(new_id, int):
+        if not isinstance(id, int):
             raise TypeError("ID must be an integer.")
-        if not isinstance(new_width, int):
+        if not isinstance(width, int):
             raise TypeError("Width must be an integer.")
-        if not isinstance(new_height, int):
+        if not isinstance(height, int):
             raise TypeError("Height must be an integer.")
-        if not isinstance(new_x, int):
+        if not isinstance(x, int):
             raise TypeError("x-coordinate must be an integer.")
-        if not isinstance(new_y, int):
+        if not isinstance(y, int):
             raise TypeError("y-coordinate must be an integer.")
 
-        self._validate_width(new_width)
-        self._validate_height(new_height)
-        self._validate_x(new_x)
-        self._validate_y(new_y)
+        self._validate_width(width)
+        self._validate_height(height)
+        self._validate_x(x)
+        self._validate_y(y)
 
-        self.__id = new_id
-        self.__width = new_width
-        self.__height = new_height
-        self.__x = new_x
-        self.__y = new_y
+        self.__id = id
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
 
     @property
     def width(self):
