@@ -64,6 +64,14 @@
         "documentation": {}
     },
     {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
+        "documentation": {}
+    },
+    {
         "label": "this",
         "kind": 6,
         "isExtraImport": true,
