@@ -171,23 +171,20 @@ class Rectangle(Base):
                 for key, value in kwargs.items():
                     if key not in ("id", "width", "height", "x", "y"):
                         raise ValueError(f"Invalid attribute name: {key}")
-
                     if key == "id":
-                        if not isinstance(value, int):
-                            raise TypeError("ID must be an integer.")
-                    elif key in ("width", "height"):
-                        if not isinstance(value, int):
-                            raise TypeError(f"{key} must be an integer.")
-                        else:
-                            self._validate_width(value)
-                            self._validate_height(value)
-                    elif key in ("x", "y"):
-                        if not isinstance(value, int):
-                            raise TypeError(f"{key}-coordinate must"
-                                            + "be an integer.")
-                        else:
-                            self._validate_x(value)
-                            self._validate_y(value)
+                        self.id = value
+                    elif key == "height":
+                        self._validate_width(value)
+                        self.__height = value
+                    elif key == "width":
+                        self._validate_width(value)
+                        self.__width = value
+                    elif key == "x":
+                        self._validate_width(value)
+                        self.__x = value
+                    elif key == "y":
+                        self._validate_width(value)
+                        self.__y = value
 
                 setattr(self, f"__{key}", value)
             except Exception as e:
