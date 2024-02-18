@@ -136,14 +136,15 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """
         Updates the rectangle attributes with given arguments in
         specific order.
 
         Args:
             *args: Positional arguments representing the new values
-            for ID, width, height, x, and y (in that order).
+                for ID, width, height, x, and y (in that order).
+            **kwargs: Keyword arguments representing attributes to update.
 
         Raises:
             TypeError: If the number of arguments is not 5 or any
@@ -152,18 +153,45 @@ class Rectangle(Base):
                 or y is negative.
         """
 
-        try:
-            self.id = args[0]
-            self._validate_width(args[1])
-            self.__width = args[1]
-            self._validate_height(args[2])
-            self.__height = args[2]
-            self._validate_x(args[3])
-            self.__x = args[3]
-            self._validate_y(args[4])
-            self.__y = args[4]
-        except Exception as e:
-            pass
+        if args:
+            try:
+                self.id = args[0]
+                self._validate_width(args[1])
+                self.__width = args[1]
+                self._validate_height(args[2])
+                self.__height = args[2]
+                self._validate_x(args[3])
+                self.__x = args[3]
+                self._validate_y(args[4])
+                self.__y = args[4]
+            except Exception as e:
+                pass
+        if kwargs:
+            try:
+                for key, value in kwargs.items():
+                    if key not in ("id", "width", "height", "x", "y"):
+                        raise ValueError(f"Invalid attribute name: {key}")
+
+                    if key == "id":
+                        if not isinstance(value, int):
+                            raise TypeError("ID must be an integer.")
+                    elif key in ("width", "height"):
+                        if not isinstance(value, int):
+                            raise TypeError(f"{key} must be an integer.")
+                        else:
+                            self._validate_width(value)
+                            self._validate_height(value)
+                    elif key in ("x", "y"):
+                        if not isinstance(value, int):
+                            raise TypeError(f"{key}-coordinate must"
+                                            + "be an integer.")
+                        else:
+                            self._validate_x(value)
+                            self._validate_y(value)
+
+                setattr(self, f"__{key}", value)
+            except Exception as e:
+                pass
 
     @property
     def width(self):
