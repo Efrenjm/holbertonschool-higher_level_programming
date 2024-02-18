@@ -91,7 +91,8 @@ class Square(Rectangle):
 
     def update(self, *args, **kwargs):
         """
-        Updates the square attributes with given arguments, prioritizing kwargs.
+        Updates the square attributes with given arguments,
+        prioritizing kwargs.
 
         Args:
             *args: Positional arguments (treated as ID, size, x, y).
