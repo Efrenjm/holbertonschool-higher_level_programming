@@ -136,6 +136,46 @@ class Rectangle(Base):
             print(" " * self.x, end="")
             print("#" * self.width)
 
+    def update(self, *args):
+        """
+        Updates the rectangle attributes with given arguments in specific order.
+
+        Args:
+            *args: Positional arguments representing the new values for ID,
+                   width, height, x, and y (in that order).
+
+        Raises:
+            TypeError: If the number of arguments is not 5 or any argument is not an integer.
+            ValueError: If width or height is not positive, or x or y is negative.
+        """
+
+        if len(args) != 5:
+            raise TypeError("update() requires exactly 5 arguments.")
+
+        new_id, new_width, new_height, new_x, new_y = args
+
+        if not isinstance(new_id, int):
+            raise TypeError("ID must be an integer.")
+        if not isinstance(new_width, int):
+            raise TypeError("Width must be an integer.")
+        if not isinstance(new_height, int):
+            raise TypeError("Height must be an integer.")
+        if not isinstance(new_x, int):
+            raise TypeError("x-coordinate must be an integer.")
+        if not isinstance(new_y, int):
+            raise TypeError("y-coordinate must be an integer.")
+
+        self._validate_width(new_width)
+        self._validate_height(new_height)
+        self._validate_x(new_x)
+        self._validate_y(new_y)
+
+        self.__id = new_id
+        self.__width = new_width
+        self.__height = new_height
+        self.__x = new_x
+        self.__y = new_y
+
     @property
     def width(self):
         return self.__width
