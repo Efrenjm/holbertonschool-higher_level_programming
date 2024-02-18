@@ -49,7 +49,6 @@ class Square(Rectangle):
 
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
-
     def __str__(self):
         """
         Returns a string representation of the Square object.
@@ -108,6 +107,24 @@ class Square(Rectangle):
                 setattr(self, f"__{key}", value)
             except Exception as e:
                 pass
+
+    def to_dictionary(self):
+        """
+        Returns a dictionary representation of the Square object.
+
+        Returns:
+            dict: A dictionary containing the square's ID, size,
+            x, and y attributes.
+        """
+
+        # Leverage inheritance for common attributes
+        rectangle_dict = super().to_dictionary()
+
+        # Override the "width" and "height" keys with "size"
+        rectangle_dict["size"] = rectangle_dict.pop("width")
+        rectangle_dict.pop("height")
+
+        return rectangle_dict
 
     @property
     def size(self):
