@@ -56,6 +56,14 @@
         "documentation": {}
     },
     {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
         "label": "Square",
         "importPath": "models.square",
         "description": "models.square",

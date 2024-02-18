@@ -190,6 +190,35 @@ class Rectangle(Base):
             except Exception as e:
                 pass
 
+    def to_dictionary(self):
+        """
+        Returns a dictionary representation of the Rectangle object.
+
+        Returns:
+            dict: A dictionary containing the rectangle's ID, width, height, x, and y attributes.
+        """
+
+        return {
+            "id": self.id,
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y,
+        }
+    
+    def __str__(self):
+        """
+        Returns a string representation of the Rectangle object
+        in the specified format.
+
+        Returns:
+            str: A formatted string containing the rectangle's
+                class, ID, coordinates, and dimensions.
+        """
+
+        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -" \
+            + f" {self.width}/{self.height}"
+
     @property
     def width(self):
         return self.__width
@@ -225,16 +254,3 @@ class Rectangle(Base):
     def y(self, value):
         self._validate_y(value)
         self.__y = value
-
-    def __str__(self):
-        """
-        Returns a string representation of the Rectangle object
-        in the specified format.
-
-        Returns:
-            str: A formatted string containing the rectangle's
-                class, ID, coordinates, and dimensions.
-        """
-
-        return f"[Rectangle] ({self.id}) {self.x}/{self.y} -" \
-            + f" {self.width}/{self.height}"

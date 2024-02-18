@@ -49,34 +49,6 @@ class Square(Rectangle):
 
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
-    @property
-    def size(self):
-        """
-        Gets the current side length of the square.
-
-        Returns:
-            int: The square's side length.
-        """
-
-        return self.width
-
-    @size.setter
-    def size(self, value):
-        """
-        Sets the side length of the square, updating both width and height.
-
-        Args:
-            value (int): The new side length for the square.
-            Must be greater than 0.
-
-        Raises:
-            TypeError: If the value is not an integer.
-            ValueError: If the value is not positive.
-        """
-
-        self._validate_width(value)
-        self.width = value
-        self.height = value
 
     def __str__(self):
         """
@@ -136,3 +108,32 @@ class Square(Rectangle):
                 setattr(self, f"__{key}", value)
             except Exception as e:
                 pass
+
+    @property
+    def size(self):
+        """
+        Gets the current side length of the square.
+
+        Returns:
+            int: The square's side length.
+        """
+
+        return self.width
+
+    @size.setter
+    def size(self, value):
+        """
+        Sets the side length of the square, updating both width and height.
+
+        Args:
+            value (int): The new side length for the square.
+            Must be greater than 0.
+
+        Raises:
+            TypeError: If the value is not an integer.
+            ValueError: If the value is not positive.
+        """
+
+        self._validate_width(value)
+        self.width = value
+        self.height = value
