@@ -153,7 +153,7 @@ class Rectangle(Base):
         """
 
         try:
-            self.__id = args[0]
+            self.id = args[0]
             self._validate_width(args[1])
             self.__width = args[1]
             self._validate_height(args[2])
