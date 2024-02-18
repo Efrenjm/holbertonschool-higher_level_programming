@@ -162,7 +162,7 @@ class Rectangle(Base):
             self.__x = args[3]
             self._validate_y(args[4])
             self.__y = args[4]
-        except:
+        except Exception as e:
             pass
 
     @property
