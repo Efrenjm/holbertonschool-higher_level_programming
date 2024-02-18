@@ -186,6 +186,15 @@
     {
         "label": "Square",
         "kind": 6,
+        "importPath": "python-almost_a_circle.models.square",
+        "description": "python-almost_a_circle.models.square",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    Square class representing a square with inherited attributes and methods\n    from Rectangle.\n    Attributes:\n        size (int): The side length of the square. Must be greater than 0.\n        x (int): The x-coordinate of the square's top-left corner. Must be\n            non-negative.\n        y (int): The y-coordinate of the square's top-left corner. Must be\n            non-negative.",
+        "detail": "python-almost_a_circle.models.square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "kind": 6,
         "importPath": "python-classes.0-square",
         "description": "python-classes.0-square",
         "peekOfCode": "class Square:\n    \"\"\"Square class\"\"\"\n    pass",
