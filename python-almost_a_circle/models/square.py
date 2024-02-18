@@ -37,7 +37,6 @@ class Square(Rectangle):
         """
 
         super().__init__(size, size, x, y, id)
-        #self.__size = size
 
     def __str__(self):
         """
@@ -67,15 +66,14 @@ class Square(Rectangle):
         Sets the side length of the square, updating both width and height.
 
         Args:
-            value (int): The new side length for the square. Must be greater than 0.
+            value (int): The new side length for the square.
+            Must be greater than 0.
 
         Raises:
             TypeError: If the value is not an integer.
             ValueError: If the value is not positive.
         """
 
-        # if not isinstance(value, int):
-        #     raise TypeError("Size must be an integer.")
         self._validate_width(value)
         self.width = value
         self.height = value
@@ -85,8 +83,8 @@ class Square(Rectangle):
         Returns a string representation of the Square object.
 
         Returns:
-            str: A formatted string containing the square's class, ID, coordinates,
-                 and size.
+            str: A formatted string containing the square's
+            class, ID, coordinates, and size.
         """
 
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
