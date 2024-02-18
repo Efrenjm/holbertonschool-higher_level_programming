@@ -88,3 +88,50 @@ class Square(Rectangle):
         """
 
         return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
+
+    def update(self, *args, **kwargs):
+        """
+        Updates the square attributes with given arguments, prioritizing kwargs.
+
+        Args:
+            *args: Positional arguments (treated as ID, size, x, y).
+            **kwargs: Keyword arguments representing attributes to update.
+
+        Raises:
+            TypeError: If mixed positional and keyword arguments are provided.
+            ValueError: If invalid values are provided for attributes.
+        """
+
+        if args:
+            try:
+                self.id = args[0]
+                self._validate_width(args[1])
+                self.width = args[1]
+                self.height = args[1]
+                self._validate_x(args[2])
+                self.x = args[2]
+                self._validate_y(args[3])
+                self.y = args[3]
+            except Exception as e:
+                pass
+        elif kwargs:
+            try:
+                for key, value in kwargs.items():
+                    if key not in ("id", "size", "x", "y"):
+                        raise ValueError(f"Invalid attribute name: {key}")
+                    if key == "id":
+                        self.id = value
+                    elif key == "size":
+                        self._validate_width(value)
+                        self.width = value
+                        self.height = value
+                    elif key == "x":
+                        self._validate_x(value)
+                        self.x = value
+                    elif key == "y":
+                        self._validate_y(value)
+                        self.y = value
+
+                setattr(self, f"__{key}", value)
+            except Exception as e:
+                pass

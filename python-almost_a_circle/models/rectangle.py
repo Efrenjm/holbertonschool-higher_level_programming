@@ -166,7 +166,7 @@ class Rectangle(Base):
                 self.__y = args[4]
             except Exception as e:
                 pass
-        if kwargs:
+        elif kwargs:
             try:
                 for key, value in kwargs.items():
                     if key not in ("id", "width", "height", "x", "y"):
@@ -174,16 +174,16 @@ class Rectangle(Base):
                     if key == "id":
                         self.id = value
                     elif key == "height":
-                        self._validate_width(value)
+                        self._validate_height(value)
                         self.__height = value
                     elif key == "width":
                         self._validate_width(value)
                         self.__width = value
                     elif key == "x":
-                        self._validate_width(value)
+                        self._validate_x(value)
                         self.__x = value
                     elif key == "y":
-                        self._validate_width(value)
+                        self._validate_y(value)
                         self.__y = value
 
                 setattr(self, f"__{key}", value)
