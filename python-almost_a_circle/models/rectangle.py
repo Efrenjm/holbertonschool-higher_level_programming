@@ -152,21 +152,15 @@ class Rectangle(Base):
                 or y is negative.
         """
 
-        if len(args) != 5:
-            raise TypeError("update() requires exactly 5 arguments.")
-
-        id, width, height, x, y = args
-
-        if not isinstance(id, int):
-            raise TypeError("ID must be an integer.")
-        if not isinstance(width, int):
-            raise TypeError("Width must be an integer.")
-        if not isinstance(height, int):
-            raise TypeError("Height must be an integer.")
-        if not isinstance(x, int):
-            raise TypeError("x-coordinate must be an integer.")
-        if not isinstance(y, int):
-            raise TypeError("y-coordinate must be an integer.")
+        try:
+            for i, param in enumerate(['__id':, '__width', '__height', '__x', '__y']):
+                if not isinstance(args[i], int):
+                    raise TypeError(f"{param.strip('__')} must be an integer.")
+                if param != '__id':
+                    self['_validate_' + param.strip('__')](args[i])
+                self[param] = args[i]
+        except:
+            pass
 
         self._validate_width(width)
         self._validate_height(height)
