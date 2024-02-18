@@ -195,7 +195,8 @@ class Rectangle(Base):
         Returns a dictionary representation of the Rectangle object.
 
         Returns:
-            dict: A dictionary containing the rectangle's ID, width, height, x, and y attributes.
+            dict: A dictionary containing the rectangle's ID,
+            width, height, x, and y attributes.
         """
 
         return {
@@ -205,7 +206,7 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y,
         }
-    
+
     def __str__(self):
         """
         Returns a string representation of the Rectangle object
