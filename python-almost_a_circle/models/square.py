@@ -58,7 +58,7 @@ class Square(Rectangle):
             int: The square's side length.
         """
 
-        return self.id
+        return self.width
 
     @size.setter
     def size(self, value):
