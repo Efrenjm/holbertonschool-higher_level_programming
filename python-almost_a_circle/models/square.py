@@ -37,7 +37,7 @@ class Square(Rectangle):
         """
 
         super().__init__(size, size, x, y, id)
-        self.__size = size
+        #self.__size = size
 
     def __str__(self):
         """
@@ -48,7 +48,7 @@ class Square(Rectangle):
             ID, coordinates, and size.
         """
 
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.__size}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
     def size(self):
@@ -59,7 +59,7 @@ class Square(Rectangle):
             int: The square's side length.
         """
 
-        return self.width
+        return self.id
 
     @size.setter
     def size(self, value):
@@ -77,9 +77,8 @@ class Square(Rectangle):
         # if not isinstance(value, int):
         #     raise TypeError("Size must be an integer.")
         self._validate_width(value)
-        self.__size = value
-        self.__width = value
-        self.__height = value
+        self.width = value
+        self.height = value
 
     def __str__(self):
         """
@@ -90,4 +89,4 @@ class Square(Rectangle):
                  and size.
         """
 
-        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.__size}"
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.width}"
