@@ -153,25 +153,17 @@ class Rectangle(Base):
         """
 
         try:
-            for i, param in enumerate(['__id':, '__width', '__height', '__x', '__y']):
-                if not isinstance(args[i], int):
-                    raise TypeError(f"{param.strip('__')} must be an integer.")
-                if param != '__id':
-                    self['_validate_' + param.strip('__')](args[i])
-                self[param] = args[i]
+            self.__id = args[0]
+            self._validate_width(args[1])
+            self.__width = args[1]
+            self._validate_height(args[2])
+            self.__height = args[2]
+            self._validate_x(args[3])
+            self.__x = args[3]
+            self._validate_y(args[4])
+            self.__y = args[4]
         except:
             pass
-
-        self._validate_width(width)
-        self._validate_height(height)
-        self._validate_x(x)
-        self._validate_y(y)
-
-        self.__id = id
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
 
     @property
     def width(self):
