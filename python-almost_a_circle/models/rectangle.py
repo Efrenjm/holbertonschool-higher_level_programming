@@ -129,8 +129,11 @@ class Rectangle(Base):
         Prints the rectangle to standard output using '#' characters.
         """
 
-        for _ in range(self.height):
-            print(" " * self.y, end="")
+        for i in range(self.height + self.y):
+            if i < self.y:
+                print()
+                continue
+            print(" " * self.x, end="")
             print("#" * self.width)
 
     @property
