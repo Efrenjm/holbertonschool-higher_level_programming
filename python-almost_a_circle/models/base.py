@@ -2,6 +2,7 @@
 """ models/base.py """
 import json
 
+
 class Base:
     """
     Base class for managing unique IDs and providing additional
