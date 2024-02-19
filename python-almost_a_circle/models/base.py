@@ -68,3 +68,28 @@ class Base:
             json_string = json_string[:-2] + "]"
 
         return json_string
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """
+        Saves the JSON string representation of a list of objects to a file.
+
+        Args:
+            cls (class): The class of the objects in the list.
+            list_objs (list): A list of objects inheriting from Base.
+
+        Raises:
+            TypeError: If any object in the list is not an instance of the calling class.
+        """
+
+        if not list_objs:
+            list_objs = []
+
+        json_string = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+
+        filename = f"{cls.__name__}.json"
+
+        with open(filename, "w") as file:
+            file.write(json_string)
+
+        print(f"{filename} saved successfully!")
