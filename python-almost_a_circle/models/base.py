@@ -58,7 +58,9 @@ class Base:
         else:
             json_string = "["
             for dict in list_dictionaries:
-                if dict != {}:
+                if dict == {}:
+                    json_string += "{}"
+                else:
                     json_string += "{"
                     for key, val in dict.items():
                         json_string += f'"{key}": {val}, '
