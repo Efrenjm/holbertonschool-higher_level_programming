@@ -61,8 +61,8 @@ class Base:
             for dict in list_dictionaries:
                 json_string += "{"
                 for key, val in dict.items():
-                    json_string += f'"{key}": {val},'
-                json_string = json_string[:-1] + "},"
-            json_string = json_string[:-1] + "]"
+                    json_string += f'"{key}": {val}, '
+                json_string = json_string[:-2] + "}, "
+            json_string = json_string[:-2] + "]"
 
         return json_string
