@@ -130,15 +130,13 @@ class Base:
             list: A list of objects, or an empty list if json_string is
             None or empty.
         """
-        
+
         if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1)  # Create a dummy instance with arbitrary dimensions
+            dummy = cls(1, 1)
         elif cls.__name__ == "Square":
-            dummy = cls(1)  # Create a dummy instance with arbitrary size
+            dummy = cls(1)
         else:
             raise ValueError("Unsupported class for create method.")
 
-        dummy.update(**dictionary)  # Update dummy instance with provided attributes
+        dummy.update(**dictionary)
         return dummy
-
- 
