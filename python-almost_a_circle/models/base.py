@@ -140,3 +140,25 @@ class Base:
 
         dummy.update(**dictionary)
         return dummy
+    
+    @classmethod
+    def load_from_file(cls):
+        """
+        Returns the list of objects represented by a JSON string.
+
+        Args:
+            json_string (str): A string representing a list of dictionaries.
+
+        Returns:
+            list: A list of objects, or an empty list if json_string is
+            None or empty.
+        """
+        filename = f"{cls.__name__}.json"
+
+        try:
+            with open(filename, "r") as file:
+                json_string = file.read()
+                list_dicts = cls.from_json_string(json_string)
+                return [cls.create(**dict) for dict in list_dicts]
+        except FileNotFoundError:
+            return []
