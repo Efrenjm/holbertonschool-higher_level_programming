@@ -54,7 +54,7 @@ class Base:
             str: The JSON string representation of the list, or "[]" if empty.
         """
 
-        if not list_dictionaries:
+        if not list_dictionaries or list_dictionaries == []:
             return "[]"
         else:
             json_string = "["
