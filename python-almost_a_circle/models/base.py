@@ -9,7 +9,7 @@ class Base:
     utilities for model classes.
     """
 
-    __nb_objects = 0  # Private class attribute for generating unique IDs
+    __nb_objects = 0
 
     def __init__(self, id=None):
         """
@@ -117,3 +117,28 @@ class Base:
         except json.JSONDecodeError:
             print("Invalid JSON string.")
             return []
+
+    @classmethod
+    def create(cls, **dictionary):
+        """
+        Returns the list of objects represented by a JSON string.
+
+        Args:
+            json_string (str): A string representing a list of dictionaries.
+
+        Returns:
+            list: A list of objects, or an empty list if json_string is
+            None or empty.
+        """
+        
+        if cls.__name__ == "Rectangle":
+            dummy = cls(1, 1)  # Create a dummy instance with arbitrary dimensions
+        elif cls.__name__ == "Square":
+            dummy = cls(1)  # Create a dummy instance with arbitrary size
+        else:
+            raise ValueError("Unsupported class for create method.")
+
+        dummy.update(**dictionary)  # Update dummy instance with provided attributes
+        return dummy
+
+ 
