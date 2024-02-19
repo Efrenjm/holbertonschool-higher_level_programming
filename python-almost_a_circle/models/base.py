@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ models/base.py """
-
+import json
 
 class Base:
     """
@@ -91,3 +91,26 @@ class Base:
 
         with open(filename, "w") as file:
             file.write(json_string)
+
+    @staticmethod
+    def from_json_string(json_string):
+        """
+        Returns the list of objects represented by a JSON string.
+
+        Args:
+            json_string (str): A string representing a list of dictionaries.
+
+        Returns:
+            list: A list of objects, or an empty list if json_string is None or empty.
+        """
+
+        if not json_string:
+            return []
+
+        try:
+            list_dictionaries = json.loads(json_string)
+            # Incorporate any additional processing for "type" information if needed
+            return list_dictionaries
+        except json.JSONDecodeError:
+            print("Invalid JSON string.")
+            return []
