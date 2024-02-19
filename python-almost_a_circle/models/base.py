@@ -140,7 +140,7 @@ class Base:
 
         dummy.update(**dictionary)
         return dummy
-    
+
     @classmethod
     def load_from_file(cls):
         """
@@ -153,6 +153,7 @@ class Base:
             list: A list of objects, or an empty list if json_string is
             None or empty.
         """
+
         filename = f"{cls.__name__}.json"
 
         try:
