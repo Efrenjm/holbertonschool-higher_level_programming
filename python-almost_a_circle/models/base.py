@@ -80,13 +80,15 @@ class Base:
             list_objs (list): A list of objects inheriting from Base.
 
         Raises:
-            TypeError: If any object in the list is not an instance of the calling class.
+            TypeError: If any object in the list is not an instance
+            of the calling class.
         """
 
         if not list_objs:
             list_objs = []
 
-        json_string = cls.to_json_string([obj.to_dictionary() for obj in list_objs])
+        json_string = cls.to_json_string([obj.to_dictionary()
+                                          for obj in list_objs])
 
         filename = f"{cls.__name__}.json"
 
@@ -102,7 +104,8 @@ class Base:
             json_string (str): A string representing a list of dictionaries.
 
         Returns:
-            list: A list of objects, or an empty list if json_string is None or empty.
+            list: A list of objects, or an empty list if json_string is
+            None or empty.
         """
 
         if not json_string:
@@ -110,7 +113,6 @@ class Base:
 
         try:
             list_dictionaries = json.loads(json_string)
-            # Incorporate any additional processing for "type" information if needed
             return list_dictionaries
         except json.JSONDecodeError:
             print("Invalid JSON string.")
