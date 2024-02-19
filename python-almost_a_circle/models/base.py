@@ -91,5 +91,3 @@ class Base:
 
         with open(filename, "w") as file:
             file.write(json_string)
-
-        print(f"{filename} saved successfully!")
