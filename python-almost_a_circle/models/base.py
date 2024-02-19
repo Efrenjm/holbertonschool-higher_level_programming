@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ models/base.py """
+import json
 
 
 class Base:
@@ -40,8 +41,8 @@ class Base:
 
         return f"{self.__class__.__name__}(id={self.id})"
 
-    # @staticmethod
-    # def to_json_string(list_dictionaries):
+    @staticmethod
+    def to_json_string(list_dictionaries):
         """
         Returns the JSON string representation of a list of dictionaries.
 
@@ -53,7 +54,15 @@ class Base:
             str: The JSON string representation of the list, or "[]" if empty.
         """
 
-        # if not list_dictionaries:
-        #     return "[]"
+        if not list_dictionaries:
+            return "[]"
+        else:
+            json_string = "["
+            for dict in list_dictionaries:
+                json_string += "{"
+                for key, val in dict.items():
+                    json_string += f'"{key}": {val},'
+                json_string = json_string[:-1] + "},"
+            json_string = json_string[:-1] + "]"
 
-        # return json.dumps(list_dictionaries, indent=4)
+        return json_string
