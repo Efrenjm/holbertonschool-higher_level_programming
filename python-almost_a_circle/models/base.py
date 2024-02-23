@@ -1,165 +1,85 @@
 #!/usr/bin/python3
-""" models/base.py """
+"""
+
+A model that contains a Base class
+
+"""
+
+
+from os import path
 import json
 
 
 class Base:
     """
-    Base class for managing unique IDs and providing additional
-    utilities for model classes.
+    Init Base Class
     """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
         """
-        Initializes the Base object.
-
-        Args:
-            id (int, optional): Optional ID to assign to the object.
-            If not provided, a unique ID is generated automatically.
-
-        Raises:
-            TypeError: If the provided `id` is not an integer.
+        The __init__ method initializes the size value
         """
 
-        if id is not None:
-            if not isinstance(id, int):
-                raise TypeError("Provided ID must be an integer.")
-            self.id = id
-        else:
+        if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-
-    def __str__(self):
-        """
-        Returns a string representation of the Base object.
-
-        Returns:
-            str: A formatted string containing the object's class name and ID.
-        """
-
-        return f"{self.__class__.__name__}(id={self.id})"
+        else:
+            self.id = id
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        """
-        Returns the JSON string representation of a list of dictionaries.
+        if list_dictionaries is None or len(list_dictionaries) == 0:
+            return '[]'
 
-        Args:
-            list_dictionaries (list): A list of dictionaries to convert
-            to JSON.
-
-        Returns:
-            str: The JSON string representation of the list, or "[]" if empty.
-        """
-
-        if not list_dictionaries or list_dictionaries == []:
-            return "[]"
-        else:
-            json_string = "["
-            for dict in list_dictionaries:
-                if dict == {}:
-                    json_string += "{}"
-                else:
-                    json_string += "{"
-                    for key, val in dict.items():
-                        json_string += f'"{key}": {val}, '
-                    json_string = json_string[:-2] + "}, "
-            json_string = json_string[:-2] + "]"
-
-        return json_string
+        return json.dumps(list_dictionaries)
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """
-        Saves the JSON string representation of a list of objects to a file.
+        filename = cls.__name__ + '.json'
 
-        Args:
-            cls (class): The class of the objects in the list.
-            list_objs (list): A list of objects inheriting from Base.
+        with open(filename, mode='w', encoding='utf-8') as f:
+            if list_objs is None:
+                return f.write(cls.to_json_string(None))
 
-        Raises:
-            TypeError: If any object in the list is not an instance
-            of the calling class.
-        """
+            json_attrs = []
 
-        if not list_objs:
-            list_objs = []
+            for elem in list_objs:
+                json_attrs.append(elem.to_dictionary())
 
-        json_string = cls.to_json_string([obj.to_dictionary()
-                                          for obj in list_objs])
-
-        filename = f"{cls.__name__}.json"
-
-        with open(filename, "w") as file:
-            file.write(json_string)
+            return f.write(cls.to_json_string(json_attrs))
 
     @staticmethod
     def from_json_string(json_string):
-        """
-        Returns the list of objects represented by a JSON string.
-
-        Args:
-            json_string (str): A string representing a list of dictionaries.
-
-        Returns:
-            list: A list of objects, or an empty list if json_string is
-            None or empty.
-        """
-
-        if not json_string:
+        if json_string is None or len(json_string) == 0:
             return []
 
-        try:
-            list_dictionaries = json.loads(json_string)
-            return list_dictionaries
-        except json.JSONDecodeError:
-            print("Invalid JSON string.")
-            return []
+        return json.loads(json_string)
 
     @classmethod
     def create(cls, **dictionary):
-        """
-        Returns the list of objects represented by a JSON string.
+        if cls.__name__ == 'Square':
+            temporarily = cls(3)
 
-        Args:
-            json_string (str): A string representing a list of dictionaries.
+        if cls.__name__ == 'Rectangle':
+            temporarily = cls(3, 3)
 
-        Returns:
-            list: A list of objects, or an empty list if json_string is
-            None or empty.
-        """
-
-        if cls.__name__ == "Rectangle":
-            dummy = cls(1, 1)
-        elif cls.__name__ == "Square":
-            dummy = cls(1)
-        else:
-            raise ValueError("Unsupported class for create method.")
-
-        dummy.update(**dictionary)
-        return dummy
+        temporarily.update(**dictionary)
+        return temporarily
 
     @classmethod
     def load_from_file(cls):
-        """
-        Returns the list of objects represented by a JSON string.
+        filename = cls.__name__ + '.json'
 
-        Args:
-            json_string (str): A string representing a list of dictionaries.
-
-        Returns:
-            list: A list of objects, or an empty list if json_string is
-            None or empty.
-        """
-
-        filename = f"{cls.__name__}.json"
-
-        try:
-            with open(filename, "r") as file:
-                json_string = file.read()
-                list_dicts = cls.from_json_string(json_string)
-                return [cls.create(**dict) for dict in list_dicts]
-        except FileNotFoundError:
+        if path.exists(filename) is False:
             return []
+
+        with open(filename, mode='r', encoding='utf-8') as f:
+            objs = cls.from_json_string(f.read())
+            instances = []
+
+            for elem in objs:
+                instances.append(cls.create(**elem))
+
+            return instances
