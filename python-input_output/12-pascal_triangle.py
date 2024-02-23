@@ -1,24 +1,32 @@
+#!/usr/bin/python3
+"""function pascal triangle"""
+
+
 def pascal_triangle(n):
     """
-    Generates the Pascal's triangle of size n.
-
-    Args:
-        n: The number of rows in the Pascal's triangle.
-
-    Returns:
-        A list of lists representing the Pascal's triangle.
+    init function
     """
 
     if n <= 0:
         return []
 
+    limit = n - 1
     triangle = [[1]]
 
-    for row_index in range(1, n):
-        row = [1] * (row_index + 1)
-        for col_index in range(1, row_index):
-            row[col_index] = triangle[row_index - 1][col_index - 1] \
-               + triangle[row_index - 1][col_index]
-    triangle.append(row)
+    for i in range(limit):
+        row = []
+        row.append(1)
+
+        if len(triangle[i]) > 1:
+            prev_row_len = len(triangle[i]) - 1
+            nxt = 1
+
+            for j in range(prev_row_len):
+                suma = triangle[i][j] + triangle[i][nxt]
+                row.append(suma)
+                nxt += 1
+
+        row.append(1)
+        triangle.append(row)
 
     return triangle

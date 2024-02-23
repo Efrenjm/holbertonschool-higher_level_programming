@@ -1,17 +1,13 @@
-import json
-"""new comment"""
+#!/usr/bin/python3
+"""from json"""
+
+
+from json import loads
+
 
 def from_json_string(my_str):
     """
-    Convierte una cadena JSON a un objeto de Python.
-
-    Args:
-        my_str: La cadena JSON a convertir.
-
-    Returns:
-        El objeto de Python representado por la cadena JSON.
+    init function
     """
 
-    if not my_str:
-        return None
-    return json.loads(my_str)
+    return loads(my_str)

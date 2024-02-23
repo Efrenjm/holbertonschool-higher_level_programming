@@ -1,16 +1,14 @@
-import json
+#!/usr/bin/python3
+"""load json file"""
+
+
+from json import loads
 
 
 def load_from_json_file(filename):
     """
-    Carga un objeto Python desde un archivo JSON.
-
-    Args:
-        filename: El nombre del archivo JSON.
-
-    Returns:
-        El objeto Python representado en el archivo JSON.
+    init function
     """
 
-    with open(filename, "r") as file:
-        return json.load(file)
+    with open(filename, encoding='utf-8') as f:
+        return loads(f.read())

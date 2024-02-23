@@ -1,14 +1,15 @@
+#!/usr/bin/python3
+"""class student"""
+
+
 class Student:
-    """Represents a student with name, surname, and age,
-    providing serialization and deserialization."""
+    """
+    init class
+    """
 
     def __init__(self, first_name, last_name, age):
-        """Initializes a new student.
-
-        Args:
-            first_name (str): The student's first name.
-            last_name (str): The student's last name.
-            age (int): The student's age.
+        """
+        init fucntion
         """
 
         self.first_name = first_name
@@ -16,40 +17,30 @@ class Student:
         self.age = age
 
     def to_json(self, attrs=None):
-        """Converts the student to a dictionary representation,
-        optionally including specific attributes.
-
-        Args:
-            attrs (list of str, optional): A list of attribute
-            names to include in the dictionary. If None, all
-            attributes are included. Defaults to None.
-
-        Returns:
-            dict: A dictionary representing the student, containing
-            the specified attributes.
+        """
+        function to json
         """
 
-        student = {
-            "first_name": self.first_name,
-            "last_name": self.last_name,
-            "age": self.age
-        }
+        class_d = self.__dict__
+        sel_d = dict()
 
-        if attrs is not None:
-            # Filter the dictionary to include only specified attributes
-            student = {attr: student[attr] for attr in attrs
-                       if attr in student}
+        if type(attrs) is list:
+            for attr in attrs:
+                if type(attr) is not str:
+                    return class_d
 
-        return student
+                if attr in class_d:
+                    sel_d[attr] = class_d[attr]
+
+            return sel_d
+
+        return class_d
 
     def reload_from_json(self, json):
-        """Reloads the student attributes from a JSON dictionary.
-
-        Args:
-            json (dict): A dictionary representing a student with
-            attribute names as keys and values as data.
+        """
+        reload function
         """
 
-        for key, value in json.items():
-            if hasattr(self, key):
-                setattr(self, key, value)
+        for i in json:
+            if i in self.__dict__.keys():
+                self.__dict__[i] = json[i]
