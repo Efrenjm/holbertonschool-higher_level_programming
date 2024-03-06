@@ -1,5 +1,30 @@
 [
     {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "path",
+        "importPath": "os",
+        "description": "os",
+        "isExtraImport": true,
+        "detail": "os",
+        "documentation": {}
+    },
+    {
         "label": "json",
         "kind": 6,
         "isExtraImport": true,
@@ -17,6 +42,38 @@
         "documentation": {}
     },
     {
+        "label": "loads",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "dumps",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "loads",
+        "importPath": "json",
+        "description": "json",
+        "isExtraImport": true,
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "importPath": "models.base",
         "description": "models.base",
@@ -33,11 +90,27 @@
         "documentation": {}
     },
     {
-        "label": "Rectangle",
-        "importPath": "models.rectangle",
-        "description": "models.rectangle",
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
         "isExtraImport": true,
-        "detail": "models.rectangle",
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "models.base",
+        "description": "models.base",
+        "isExtraImport": true,
+        "detail": "models.base",
         "documentation": {}
     },
     {
@@ -126,6 +199,80 @@
         "description": "models.rectangle",
         "isExtraImport": true,
         "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "Rectangle",
+        "importPath": "models.rectangle",
+        "description": "models.rectangle",
+        "isExtraImport": true,
+        "detail": "models.rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "unittest",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "unittest",
+        "description": "unittest",
+        "detail": "unittest",
+        "documentation": {}
+    },
+    {
+        "label": "pep8",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pep8",
+        "description": "pep8",
+        "detail": "pep8",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
+        "documentation": {}
+    },
+    {
+        "label": "Square",
+        "importPath": "models.square",
+        "description": "models.square",
+        "isExtraImport": true,
+        "detail": "models.square",
         "documentation": {}
     },
     {
@@ -236,6 +383,14 @@
         "documentation": {}
     },
     {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "hidden_4",
         "kind": 6,
         "isExtraImport": true,
@@ -253,20 +408,11 @@
         "documentation": {}
     },
     {
-        "label": "unittest",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "unittest",
-        "description": "unittest",
-        "detail": "unittest",
-        "documentation": {}
-    },
-    {
         "label": "Base",
         "kind": 6,
         "importPath": "python-almost_a_circle.models.base",
         "description": "python-almost_a_circle.models.base",
-        "peekOfCode": "class Base:\n    \"\"\"\n    Base class for managing unique IDs and providing additional\n    utilities for model classes.\n    \"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        \"\"\"\n        Initializes the Base object.\n        Args:",
+        "peekOfCode": "class Base:\n    \"\"\"\n    Init Base Class\n    \"\"\"\n    __nb_objects = 0\n    def __init__(self, id=None):\n        \"\"\"\n        The __init__ method initializes the size value\n        \"\"\"\n        if id is None:",
         "detail": "python-almost_a_circle.models.base",
         "documentation": {}
     },
@@ -275,7 +421,7 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.rectangle",
         "description": "python-almost_a_circle.models.rectangle",
-        "peekOfCode": "class Rectangle(Base):\n    \"\"\"\n    Rectangle class representing a rectangle with private attributes\n    and getters/setters.\n    Attributes:\n        width (int): The width of the rectangle.\n        height (int): The height of the rectangle.\n        x (int): The x-coordinate of the rectangle's top-left corner.\n        y (int): The y-coordinate of the rectangle's top-left corner.\n    \"\"\"",
+        "peekOfCode": "class Rectangle(Base):\n    \"\"\"\n    Init class rectangle\n    \"\"\"\n    def __init__(self, width, height, x=0, y=0, id=None):\n        \"\"\"\n        The __init__ method initializes the size value\n        \"\"\"\n        super().__init__(id)\n        self.check_integer_parameter(width, 'width')",
         "detail": "python-almost_a_circle.models.rectangle",
         "documentation": {}
     },
@@ -284,8 +430,35 @@
         "kind": 6,
         "importPath": "python-almost_a_circle.models.square",
         "description": "python-almost_a_circle.models.square",
-        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    Square class representing a square with inherited attributes and methods\n    from Rectangle.\n    Attributes:\n        size (int): The side length of the square. Must be greater than 0.\n        x (int): The x-coordinate of the square's top-left corner. Must be\n            non-negative.\n        y (int): The y-coordinate of the square's top-left corner. Must be\n            non-negative.",
+        "peekOfCode": "class Square(Rectangle):\n    \"\"\"\n    Init class Square\n    \"\"\"\n    def __init__(self, size, x=0, y=0, id=None):\n        \"\"\"\n        The __init__ method initializes the size value\n        \"\"\"\n        super().__init__(size, size, x, y, id)\n    def __str__(self):",
         "detail": "python-almost_a_circle.models.square",
+        "documentation": {}
+    },
+    {
+        "label": "TestBase",
+        "kind": 6,
+        "importPath": "python-almost_a_circle.tests.test_models.test_base",
+        "description": "python-almost_a_circle.tests.test_models.test_base",
+        "peekOfCode": "class TestBase(unittest.TestCase):\n    \"\"\"\n    A class to test the Base Class\n    \"\"\"\n    def test_pep8_base(self):\n        \"\"\"\n        Test that checks PEP8\n        \"\"\"\n        syntax = pep8.StyleGuide(quit=True)\n        check = syntax.check_files(['models/base.py'])",
+        "detail": "python-almost_a_circle.tests.test_models.test_base",
+        "documentation": {}
+    },
+    {
+        "label": "TestRectangle",
+        "kind": 6,
+        "importPath": "python-almost_a_circle.tests.test_models.test_rectangle",
+        "description": "python-almost_a_circle.tests.test_models.test_rectangle",
+        "peekOfCode": "class TestRectangle(unittest.TestCase):\n    \"\"\"\n    A class to test the Rectangle Class\n    \"\"\"\n    def test_rectangle_subclass(self):\n        \"\"\"\n        Test if Rectangle class inherit from\n        Base class\n        \"\"\"\n        self.assertTrue(issubclass(Rectangle, Base))",
+        "detail": "python-almost_a_circle.tests.test_models.test_rectangle",
+        "documentation": {}
+    },
+    {
+        "label": "TestSquare",
+        "kind": 6,
+        "importPath": "python-almost_a_circle.tests.test_models.test_square",
+        "description": "python-almost_a_circle.tests.test_models.test_square",
+        "peekOfCode": "class TestSquare(unittest.TestCase):\n    \"\"\"\n    A class to test the Square Class\n    \"\"\"\n    def test_getter(self):\n        r1 = Square(5)\n        self.assertEqual(r1.size, 5)\n    def test_setter(self):\n        r1 = Square(5)\n        r1.size = 8",
+        "detail": "python-almost_a_circle.tests.test_models.test_square",
         "documentation": {}
     },
     {
@@ -995,7 +1168,7 @@
         "kind": 6,
         "importPath": "python-input_output.10-student",
         "description": "python-input_output.10-student",
-        "peekOfCode": "class Student:\n    \"\"\"Represents a student with name, surname, and age.\"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"Initializes a new student.\n        Args:\n            first_name (str): The student's first name.\n            last_name (str): The student's last name.\n            age (int): The student's age.\n        \"\"\"\n        self.first_name = first_name",
+        "peekOfCode": "class Student:\n    \"\"\"\n    init class\n    \"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"\n        init function\n        \"\"\"\n        self.first_name = first_name\n        self.last_name = last_name",
         "detail": "python-input_output.10-student",
         "documentation": {}
     },
@@ -1004,7 +1177,7 @@
         "kind": 6,
         "importPath": "python-input_output.11-student",
         "description": "python-input_output.11-student",
-        "peekOfCode": "class Student:\n    \"\"\"Represents a student with name, surname, and age,\n    providing serialization and deserialization.\"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"Initializes a new student.\n        Args:\n            first_name (str): The student's first name.\n            last_name (str): The student's last name.\n            age (int): The student's age.\n        \"\"\"",
+        "peekOfCode": "class Student:\n    \"\"\"\n    init class\n    \"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"\n        init fucntion\n        \"\"\"\n        self.first_name = first_name\n        self.last_name = last_name",
         "detail": "python-input_output.11-student",
         "documentation": {}
     },
@@ -1013,7 +1186,7 @@
         "kind": 2,
         "importPath": "python-input_output.12-pascal_triangle",
         "description": "python-input_output.12-pascal_triangle",
-        "peekOfCode": "def pascal_triangle(n):\n    \"\"\"\n    Generates the Pascal's triangle of size n.\n    Args:\n        n: The number of rows in the Pascal's triangle.\n    Returns:\n        A list of lists representing the Pascal's triangle.\n    \"\"\"\n    if n <= 0:\n        return []",
+        "peekOfCode": "def pascal_triangle(n):\n    \"\"\"\n    init function\n    \"\"\"\n    if n <= 0:\n        return []\n    limit = n - 1\n    triangle = [[1]]\n    for i in range(limit):\n        row = []",
         "detail": "python-input_output.12-pascal_triangle",
         "documentation": {}
     },
@@ -1040,7 +1213,7 @@
         "kind": 2,
         "importPath": "python-input_output.4-from_json_string",
         "description": "python-input_output.4-from_json_string",
-        "peekOfCode": "def from_json_string(my_str):\n    \"\"\"\n    Convierte una cadena JSON a un objeto de Python.\n    Args:\n        my_str: La cadena JSON a convertir.\n    Returns:\n        El objeto de Python representado por la cadena JSON.\n    \"\"\"\n    if not my_str:\n        return None",
+        "peekOfCode": "def from_json_string(my_str):\n    \"\"\"\n    init function\n    \"\"\"\n    return loads(my_str)",
         "detail": "python-input_output.4-from_json_string",
         "documentation": {}
     },
@@ -1049,7 +1222,7 @@
         "kind": 2,
         "importPath": "python-input_output.5-save_to_json_file",
         "description": "python-input_output.5-save_to_json_file",
-        "peekOfCode": "def save_to_json_file(my_obj, filename):\n    \"\"\"\n    Guarda un objeto Python en un archivo de texto como JSON.\n    Args:\n        my_obj: El objeto Python a guardar.\n        filename: El nombre del archivo de texto.\n    \"\"\"\n    with open(filename, \"w\") as file:\n        json.dump(my_obj, file, indent=4)",
+        "peekOfCode": "def save_to_json_file(my_obj, filename):\n    \"\"\"\n    init function\n    \"\"\"\n    with open(filename, mode='w', encoding='utf-8') as f:\n        f.write(dumps(my_obj))",
         "detail": "python-input_output.5-save_to_json_file",
         "documentation": {}
     },
@@ -1058,17 +1231,8 @@
         "kind": 2,
         "importPath": "python-input_output.6-load_from_json_file",
         "description": "python-input_output.6-load_from_json_file",
-        "peekOfCode": "def load_from_json_file(filename):\n    \"\"\"\n    Carga un objeto Python desde un archivo JSON.\n    Args:\n        filename: El nombre del archivo JSON.\n    Returns:\n        El objeto Python representado en el archivo JSON.\n    \"\"\"\n    with open(filename, \"r\") as file:\n        return json.load(file)",
+        "peekOfCode": "def load_from_json_file(filename):\n    \"\"\"\n    init function\n    \"\"\"\n    with open(filename, encoding='utf-8') as f:\n        return loads(f.read())",
         "detail": "python-input_output.6-load_from_json_file",
-        "documentation": {}
-    },
-    {
-        "label": "add_items_to_file",
-        "kind": 2,
-        "importPath": "python-input_output.7-add_item",
-        "description": "python-input_output.7-add_item",
-        "peekOfCode": "def add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
-        "detail": "python-input_output.7-add_item",
         "documentation": {}
     },
     {
@@ -1076,7 +1240,7 @@
         "kind": 5,
         "importPath": "python-input_output.7-add_item",
         "description": "python-input_output.7-add_item",
-        "peekOfCode": "save_to_json_file = __import__('5-save_to_json_file').save_to_json_file\nload_from_json_file = __import__('6-load_from_json_file').load_from_json_file\ndef add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
+        "peekOfCode": "save_to_json_file = __import__('5-save_to_json_file').save_to_json_file\nload_from_json_file = __import__('6-load_from_json_file').load_from_json_file\nif path.exists('add_item.json'):\n    obj_json_file = load_from_json_file('add_item.json')\nelse:\n    obj_json_file = []\nfor i in range(1, len(argv)):\n    obj_json_file.append(argv[i])\nsave_to_json_file(obj_json_file, 'add_item.json')",
         "detail": "python-input_output.7-add_item",
         "documentation": {}
     },
@@ -1085,7 +1249,7 @@
         "kind": 5,
         "importPath": "python-input_output.7-add_item",
         "description": "python-input_output.7-add_item",
-        "peekOfCode": "load_from_json_file = __import__('6-load_from_json_file').load_from_json_file\ndef add_items_to_file(*args):\n    \"\"\"\n    Agrega todos los argumentos a una lista de Python\n    y los guarda en un archivo JSON.\n    \"\"\"\n    items_list = load_from_json_file(\"add_item.json\") or []\n    items_list.extend(args)\n    save_to_json_file(items_list, \"add_item.json\")",
+        "peekOfCode": "load_from_json_file = __import__('6-load_from_json_file').load_from_json_file\nif path.exists('add_item.json'):\n    obj_json_file = load_from_json_file('add_item.json')\nelse:\n    obj_json_file = []\nfor i in range(1, len(argv)):\n    obj_json_file.append(argv[i])\nsave_to_json_file(obj_json_file, 'add_item.json')",
         "detail": "python-input_output.7-add_item",
         "documentation": {}
     },
@@ -1094,7 +1258,7 @@
         "kind": 2,
         "importPath": "python-input_output.8-class_to_json",
         "description": "python-input_output.8-class_to_json",
-        "peekOfCode": "def class_to_json(obj):\n    \"\"\"\n    Convierte un objeto de clase a un diccionario serializable en JSON.\n    Args:\n        obj: La instancia de la clase a convertir.\n    Returns:\n        Un diccionario que representa el objeto de clase.\n    \"\"\"\n    # Diccionario vacío para almacenar la representación del objeto\n    result = {}",
+        "peekOfCode": "def class_to_json(obj):\n    \"\"\"\n    init function\n    \"\"\"\n    return obj.__dict__",
         "detail": "python-input_output.8-class_to_json",
         "documentation": {}
     },
@@ -1103,7 +1267,7 @@
         "kind": 6,
         "importPath": "python-input_output.9-student",
         "description": "python-input_output.9-student",
-        "peekOfCode": "class Student:\n    \"\"\"\n    Representa a un estudiante con nombre, apellido y edad.\n    \"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"\n        Inicializa un nuevo estudiante.\n        Args:\n          first_name: El nombre del estudiante.\n          last_name: El apellido del estudiante.",
+        "peekOfCode": "class Student:\n    \"\"\"\n    init class\n    \"\"\"\n    def __init__(self, first_name, last_name, age):\n        \"\"\"\n        function init\n        \"\"\"\n        self.first_name = first_name\n        self.last_name = last_name",
         "detail": "python-input_output.9-student",
         "documentation": {}
     },
