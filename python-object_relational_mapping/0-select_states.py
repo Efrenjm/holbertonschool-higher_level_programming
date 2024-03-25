@@ -1,10 +1,10 @@
 import MySQLdb
+import sys
 
-def list_states(username, password, database_name):
-    """
-    Connects to the specified MySQL database and lists states sorted by ID.
-    """
-
+if __name__ == "__main__":
+    username = sys.argv[1]
+    password = sys.argv[2]
+    database_name = sys.argv[3]
     try:
         db = MySQLdb.connect(
             host="localhost",

@@ -1839,15 +1839,6 @@
         "documentation": {}
     },
     {
-        "label": "list_states",
-        "kind": 2,
-        "importPath": "python-object_relational_mapping.0-select_states",
-        "description": "python-object_relational_mapping.0-select_states",
-        "peekOfCode": "def list_states(username, password, database_name):\n    \"\"\"\n    Connects to the specified MySQL database and lists states sorted by ID.\n    \"\"\"\n    try:\n        db = MySQLdb.connect(\n            host=\"localhost\",\n            port=3306,\n            user=username,\n            passwd=password,",
-        "detail": "python-object_relational_mapping.0-select_states",
-        "documentation": {}
-    },
-    {
         "label": "TestMaxInteger",
         "kind": 6,
         "importPath": "python-test_driven_development.tests.6-max_integer_test",
