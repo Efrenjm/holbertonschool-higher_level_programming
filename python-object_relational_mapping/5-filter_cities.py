@@ -1,3 +1,4 @@
+#!/Users/efrenjimenez/Cursos/Holberton/holbieEnv/bin/python3
 # !/usr/bin/python3
 """
 List all cities with state name in hbtn_0e_4_usa with a name
@@ -21,16 +22,16 @@ if __name__ == "__main__":
     )
     cursor = conn.cursor()
 
-    query = "SELECT cities.name\
+    cursor.execute("SELECT cities.name\
             FROM cities JOIN states ON states.id = cities.state_id\
-            WHERE states.name = %s\
-            ORDER BY cities.id ASC"
-
-    cursor.execute(query, (state_name,))
+            WHERE states.name = %s", (state_name,))
     states = cursor.fetchall()
 
-    for state in states:
-        print(state)
+    for i, state in enumerate(states):
+        if i < len(states)-1:
+            print(state[0], end=", ")
+        else:
+            print(state[0])
 
     cursor.close()
     conn.close()
