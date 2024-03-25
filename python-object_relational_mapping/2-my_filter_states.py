@@ -22,8 +22,7 @@ if __name__ == "__main__":
     )
     cursor = conn.cursor()
 
-    cursor.execute(f"SELECT * FROM states WHERE name LIKE '{state_name}'\
-                   ORDER BY states.id ASC")
+    cursor.execute(f"SELECT * FROM states WHERE name LIKE BINARY '{state_name}'")
     states = cursor.fetchall()
 
     for state in states:
