@@ -2,3 +2,4 @@ venv
 .vscode
 .idea
 .DS_Store
+python-object_relational_mapping/*.sql
