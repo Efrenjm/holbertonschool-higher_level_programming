@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+""" List all states in hbtn_0e_0_usa """
 import MySQLdb
 import sys
 
@@ -17,7 +18,7 @@ if __name__ == "__main__":
     )
     cursor = conn.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cursor.execute("SELECT * FROM states ORDER BY states.id ASC")
     states = cursor.fetchall()
 
     for state in states:
