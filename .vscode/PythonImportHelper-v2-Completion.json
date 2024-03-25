@@ -408,6 +408,15 @@
         "documentation": {}
     },
     {
+        "label": "MySQLdb",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "MySQLdb",
+        "description": "MySQLdb",
+        "detail": "MySQLdb",
+        "documentation": {}
+    },
+    {
         "label": "Base",
         "kind": 6,
         "importPath": "python-almost_a_circle.models.base",
@@ -1827,6 +1836,15 @@
         "description": "python-more_data_structures.9-multiply_by_2",
         "peekOfCode": "def multiply_by_2(a_dictionary):\n    temp_dictionary = a_dictionary.copy()\n    for key, value in temp_dictionary.items():\n        temp_dictionary[key] = value * 2\n    return temp_dictionary",
         "detail": "python-more_data_structures.9-multiply_by_2",
+        "documentation": {}
+    },
+    {
+        "label": "list_states",
+        "kind": 2,
+        "importPath": "python-object_relational_mapping.0-select_states",
+        "description": "python-object_relational_mapping.0-select_states",
+        "peekOfCode": "def list_states(username, password, database_name):\n    \"\"\"\n    Connects to the specified MySQL database and lists states sorted by ID.\n    \"\"\"\n    try:\n        db = MySQLdb.connect(\n            host=\"localhost\",\n            port=3306,\n            user=username,\n            passwd=password,",
+        "detail": "python-object_relational_mapping.0-select_states",
         "documentation": {}
     },
     {
