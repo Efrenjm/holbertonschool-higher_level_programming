@@ -1,5 +1,4 @@
-#!/Users/efrenjimenez/Cursos/Holberton/holbieEnv/bin/python3
-# !/usr/bin/python3
+#!/usr/bin/python3
 """
 List all cities with state name in hbtn_0e_4_usa with a name
 """

@@ -22,7 +22,7 @@ if __name__ == "__main__":
     )
     cursor = conn.cursor()
 
-    cursor.execute(f"SELECT * FROM states WHERE name LIKE BINARY '{state_name}'")
+    cursor.execute("SELECT * FROM states WHERE name LIKE BINARY '{}'".format({state_name}))
     states = cursor.fetchall()
 
     for state in states:
