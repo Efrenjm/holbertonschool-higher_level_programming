@@ -3,7 +3,7 @@
 List all cities with state name in hbtn_0e_4_usa with a name
 """
 import MySQLdb
-import sys
+from sys import argv
 
 if __name__ == "__main__":
     """ Open database connection """

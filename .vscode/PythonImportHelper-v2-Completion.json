@@ -391,6 +391,14 @@
         "documentation": {}
     },
     {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "hidden_4",
         "kind": 6,
         "isExtraImport": true,
