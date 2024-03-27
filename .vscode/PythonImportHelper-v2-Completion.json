@@ -399,6 +399,38 @@
         "documentation": {}
     },
     {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "argv",
+        "importPath": "sys",
+        "description": "sys",
+        "isExtraImport": true,
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
         "label": "hidden_4",
         "kind": 6,
         "isExtraImport": true,
@@ -422,6 +454,166 @@
         "importPath": "MySQLdb",
         "description": "MySQLdb",
         "detail": "MySQLdb",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "importPath": "model_state",
+        "description": "model_state",
+        "isExtraImport": true,
+        "detail": "model_state",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.ext.declarative",
+        "description": "sqlalchemy.ext.declarative",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.ext.declarative",
         "documentation": {}
     },
     {
@@ -1844,6 +2036,24 @@
         "description": "python-more_data_structures.9-multiply_by_2",
         "peekOfCode": "def multiply_by_2(a_dictionary):\n    temp_dictionary = a_dictionary.copy()\n    for key, value in temp_dictionary.items():\n        temp_dictionary[key] = value * 2\n    return temp_dictionary",
         "detail": "python-more_data_structures.9-multiply_by_2",
+        "documentation": {}
+    },
+    {
+        "label": "State",
+        "kind": 6,
+        "importPath": "python-object_relational_mapping.model_state",
+        "description": "python-object_relational_mapping.model_state",
+        "peekOfCode": "class State(Base):\n    \"\"\" Inherits from Base Tips and links to the MySQL table states \"\"\"\n    __tablename__ = 'states'\n    id = Column(Integer, primary_key=True, nullable=False)\n    name = Column(String(128), nullable=False)",
+        "detail": "python-object_relational_mapping.model_state",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "python-object_relational_mapping.model_state",
+        "description": "python-object_relational_mapping.model_state",
+        "peekOfCode": "Base = declarative_base()\nclass State(Base):\n    \"\"\" Inherits from Base Tips and links to the MySQL table states \"\"\"\n    __tablename__ = 'states'\n    id = Column(Integer, primary_key=True, nullable=False)\n    name = Column(String(128), nullable=False)",
+        "detail": "python-object_relational_mapping.model_state",
         "documentation": {}
     },
     {
