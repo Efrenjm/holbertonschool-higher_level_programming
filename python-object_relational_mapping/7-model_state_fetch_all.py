@@ -1,4 +1,3 @@
-#!/Users/efrenjimenez/Cursos/Holberton/holbieEnv/bin/python
 #!/usr/bin/python3
 """
 Lists all State objects from the database hbtn_0e_6_usa
